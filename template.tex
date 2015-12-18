@@ -1,0 +1,146 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[$fontsize$, a4paper]{article}
+
+% LAYOUT
+%--------------------------------
+% Margins
+\usepackage{geometry}
+\geometry{$geometry$}
+
+% Do not indent paragraphs
+\setlength\parindent{0in}
+
+% Enable multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{-3.5cm}
+
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
+
+% LANGUAGE
+%--------------------------------
+% Set the main language
+$if(lang)$
+  \usepackage{polyglossia}
+  \setmainlanguage{$lang$}
+$endif$
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[none]{hyphenat}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+% Cool ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+
+% MARGIN NOTES
+%--------------------------------
+\usepackage{marginnote}
+\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+%--------------------------------
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\rmfamily\mdseries}
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize\textbf}
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
+
+% PDF SETUP
+%--------------------------------
+\usepackage{hyperref}
+\hypersetup
+{
+  pdfauthor={$name$},
+  pdfsubject={$name$'s CV},
+  pdftitle={$name$'s CV},
+  colorlinks, breaklinks, xetex, bookmarks,
+  filecolor=black,
+  urlcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  citecolor=[rgb]{0.117,0.682,0.858}
+}
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+
+{\LARGE \textbf $name$}\\[.2cm]
+
+$if(urls)$
+  \begin{multicols}{2}
+$endif$
+
+$if(address)$
+  $for(address)$
+    $address$\\
+  $endfor$
+$endif$
+
+\vspace{-10pt}
+$phone$\\
+\href{mailto:$email$}{$email$}\\
+
+$if(urls)$
+  \columnbreak
+  $for(urls)$
+    \href{http://$urls$}{$urls$}\\
+  $endfor$
+  \end{multicols}
+$endif$
+
+\vspace{25pt}
+$intro$
+
+\subsection*{Areas of Interest}
+$if(interest)$
+\begin{itemize}
+  $for(interest)$
+    \item $interest$
+  $endfor$
+\end{itemize}
+$endif$
+
+\vspace{20pt}
+\section*{Research}
+$for(research)$
+  \note{$research.patent_date$} \textbf{$research.patent_title$}\\
+  \emph{$research.patent_id$}\\
+  {$research.patent_description$}\\
+  \\[.2cm]
+$endfor$
+
+\section*{Experience}
+$for(experience)$
+  \note{$experience.years$\\($experience.duration$)} \textbf{$experience.job$} at \textbf{$experience.employer$}\\
+  $for(experience.description)$
+    {$experience.description$}\\
+  $endfor$
+  \\[.2cm]
+$endfor$
+
+\section*{Academics}
+$for(academics)$
+  \note{$academics.year$}\textbf{$academics.subject$}, \textbf{$academics.institute$}\\
+  Thesis: {$academics.thesis$}\\
+  \emph{CGPA: {$academics.grade$}}\\
+  \\[.2cm]
+$endfor$
+
+\section*{Independent Courses}
+$for(courses)$
+  \note{$courses.year$}\textbf{$courses.name$}, \textbf{$courses.institute$}\\
+  \emph{Grade: $courses.grade$}\\
+  \\[.2cm]
+$endfor$
+\end{document}

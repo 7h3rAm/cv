@@ -1,0 +1,100 @@
+---
+# Personal details
+name: Ankur Tyagi
+phone: "+91 721 900 1099"
+email: 7h3rAm@gmail.com
+# Insert URLs without http://
+urls:
+- in.linkedin.com/in/ankurstyagi
+- twitter.com/7h3rAm
+- github.com/7h3rAm
+- 7h3ram.github.io
+
+# Sections
+intro: "I'm an infosec enthusiast with strong technical background in the field of information security. I've solid combination of skills that span malware analysis, exploitation, reverse engineering, protocol/file-format decoding/analysis and vulnerability assessment. I'm skilled in applying analytical and technical knowledge to produce practical solutions and have strong interest in solving complex technical issues."
+
+interest:
+- Python, C/C++, x86 Assembly
+- Research Methodologies and Innovation
+- Malware Analysis, Reverse Engineering
+- Security Intelligence, Vulnerability Assessment
+- Network/File-format Forensics, Intrusion Detection/Prevention
+
+research:
+- patent_title: Using A Probability-based Model To Detect Random Content In A Protocol Field Associated With Network Traffic
+  patent_id: United States 2014/586144
+  patent_date: Dec/2014
+  patent_description: A novel idea based upon stochastic processes derived machine learning model to identify and classify random/malicious content in network traffic.
+- patent_title: Deobfuscating Scripted Language For Network Intrusion Detection Using A Regular Expression Signature
+  patent_id: United States 2014/501798
+  patent_date: Sep/2014
+  patent_description: An attempt towards normalizing web scripts for network security appliances to consume and operate upon.
+
+experience:
+- employer: Qualys Inc.
+  years: Apr/2015 -- Present
+  duration: 8+ months
+  job: Malware Research Engineer
+  city: Pune
+  description:
+    - "[+] Reverse engineering and analysis of malware threats"
+    - "[+] Working on inhouse automation and development projects"
+    - "[+] Writing Yara rules and generating IOCs for malware families"
+- employer: Juniper Networks
+  duration: 2 years and 11 months
+  years: Apr/2012 -- Feb/2015
+  job: Security Research Engineer
+  city: Bangalore
+  description:
+    - "[+] Testing and updating in-house automation tools that help with coverage analysis against various exploitation frameworks"
+    - "[+] Ensuring coverage against latest vulnerabilities and exploits through signature development for Juniper's security portfolio devices"
+    - "[+] Regular updates of active signatures to ensure coverage against evolving IDS/IPS evasion techniques as well as for quality assurance"
+- employer: SecurView Systems
+  duration: 1 year and 5 months
+  years: Dec/2010 - Apr/2012
+  job: Information Security Engineer
+  city: Pune
+  description:
+    - "[+] Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service."
+    - "[+] Active member of the Secur-I Research Group. Group activities involved monthly publication of critical vulnerability assessments and concentrated vulnerability research."
+
+academics:
+- subject: M.Tech Software Systems
+  institute: BITS-Pilani
+  year: Dec/2014
+  thesis: Framework for Automated Inspection of Network Flows
+  grade: 6.65 (Excellent)
+- subject: BE Information Technology
+  institute: Pune University
+  year: Jul/2010
+  thesis: Research into ARP Implementation Flaws
+  grade: 6.58 (First Class)
+
+courses:
+- name: Software Security
+  institute: Coursera - University of Maryland
+  year: Dec/2015
+  grade:
+- name: The Arduino Platform and C Programming
+  institute: Coursera - University of California, Irvine
+  year: Dec/2015
+  grade: 97.5%
+- name: An Introduction to Interactive Programming in Python
+  institute: Coursera - Rice University
+  year: Jan/2014
+  grade: 90.8% w/ Distinction
+- name: Internet History, Technology and Security
+  institute: Coursera - University of Michigan
+  year: Dec/2013
+  grade: 94.6% w/ Distinction
+- name: Malicious Software and its Underground Economy
+  institute: Coursera - University of London
+  year: Sep/2013
+  grade: 100% w/ Distinction
+
+# Settings
+mainfont: Hoefler Text
+fontsize: 12pt
+lang: English
+geometry: a4paper, left=27mm, right=27mm, top=27mm, bottom=27mm
+---
