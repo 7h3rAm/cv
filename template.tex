@@ -137,10 +137,24 @@ $for(academics)$
   \\[.2cm]
 $endfor$
 
+\section*{Certifications}
+$for(certifications)$
+  \note{$certifications.year$}\textbf{$certifications.name$}\\
+  \\[.2cm]
+$endfor$
+
 \section*{Independent Courses}
 $for(courses)$
   \note{$courses.year$}\textbf{$courses.name$}, \textbf{$courses.institute$}\\
   \emph{Grade: $courses.grade$}\\
   \\[.2cm]
 $endfor$
+
+\vspace{25pt}
+$for(trailer)$
+  {$trailer.note$}\\
+  Last updated: $trailer.lastupdated$\\
+  \textbf{$trailer.signed$}
+$endfor$
+
 \end{document}

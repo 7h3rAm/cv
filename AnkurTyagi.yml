@@ -38,7 +38,7 @@ experience:
   city: Pune
   description:
     - "[+] Reverse engineering and analysis of malware threats"
-    - "[+] Working on inhouse automation and development projects"
+    - "[+] Working on in-house automation and development projects"
     - "[+] Writing Yara rules and generating IOCs for malware families"
 - employer: Juniper Networks
   duration: 2 years and 11 months
@@ -55,8 +55,8 @@ experience:
   job: Information Security Engineer
   city: Pune
   description:
-    - "[+] Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service."
-    - "[+] Active member of the Secur-I Research Group. Group activities involved monthly publication of critical vulnerability assessments and concentrated vulnerability research."
+    - "[+] Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
+    - "[+] Active member of the Secur-I Research Group. Group activities involved monthly publication of critical vulnerability assessments and concentrated vulnerability research"
 
 academics:
 - subject: M.Tech Software Systems
@@ -70,27 +70,43 @@ academics:
   thesis: Research into ARP Implementation Flaws
   grade: 6.58 (First Class)
 
+certifications:
+- name: GIAC Penetration Tester (GPEN)
+  institute: SANS
+  year: Mar/2012
+- name: Certified Ethical Hacker (CEH)
+  institute: EC-Council
+  year: May/2011
+- name: Cisco Certified Network Security Associate (CCNA)
+  institute: Cisco
+  year: Jan/2010
+
 courses:
-- name: Software Security
-  institute: Coursera - University of Maryland
-  year: Dec/2015
-  grade:
 - name: The Arduino Platform and C Programming
   institute: Coursera - University of California, Irvine
   year: Dec/2015
   grade: 97.5%
+- name: Software Security
+  institute: Coursera - University of Maryland
+  year: Dec/2015
+  grade: 92.3% (w/ Distinction)
 - name: An Introduction to Interactive Programming in Python
   institute: Coursera - Rice University
   year: Jan/2014
-  grade: 90.8% w/ Distinction
+  grade: 90.8% (w/ Distinction)
 - name: Internet History, Technology and Security
   institute: Coursera - University of Michigan
   year: Dec/2013
-  grade: 94.6% w/ Distinction
+  grade: 94.6% (w/ Distinction)
 - name: Malicious Software and its Underground Economy
   institute: Coursera - University of London
   year: Sep/2013
-  grade: 100% w/ Distinction
+  grade: 100% (w/ Distinction)
+
+trailer:
+- note: "Additional details available upon request."
+  lastupdated: "Dec 30, 2015"
+  signed:
 
 # Settings
 mainfont: Hoefler Text
