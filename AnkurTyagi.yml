@@ -11,7 +11,7 @@ urls:
 - 7h3ram.github.io
 
 # Sections
-intro: "I'm an infosec enthusiast with strong technical background in the field of information security. I've solid combination of skills that span malware analysis, exploitation, reverse engineering, protocol/file-format decoding/analysis and vulnerability assessment. I'm skilled in applying analytical and technical knowledge to produce practical solutions and have strong interest in solving complex technical issues."
+intro: "I'm an infosec enthusiast with strong technical background in the field of information security. I've solid combination of skills that span malware analysis, exploitation, reverse engineering, protocol decoding, file-format analysis and vulnerability assessment. I'm skilled in applying analytical and technical knowledge to produce practical solutions and have strong interest in solving complex technical issues."
 
 interest:
 - Python, C/C++, x86 Assembly
@@ -33,7 +33,7 @@ research:
 experience:
 - employer: Qualys Inc.
   years: Apr/2015 -- Present
-  duration: 8+ months
+  duration: 9+ months
   job: Malware Research Engineer
   city: Pune
   description:
@@ -105,7 +105,7 @@ courses:
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "Dec 30, 2015"
+  lastupdated: "Dec 31, 2015"
   signed:
 
 # Settings
