@@ -3,6 +3,12 @@
 name: Ankur Tyagi
 phone: "+91 721 900 1099"
 email: 7h3rAm@gmail.com
+
+address:
+- C704, Lorelle Society
+- Datta Mandir Road, Wakad
+- Pune, India (Pincode - 411057)
+
 # Insert URLs without http://
 urls:
 - in.linkedin.com/in/ankurstyagi
@@ -20,7 +26,7 @@ interest:
 - Security Intelligence, Vulnerability Assessment
 - Network/File-format Forensics, Intrusion Detection/Prevention
 
-research:
+patents:
 - patent_title: Using A Probability-based Model To Detect Random Content In A Protocol Field Associated With Network Traffic
   patent_id: United States 2014/586144
   patent_date: Dec/2014
@@ -33,13 +39,14 @@ research:
 experience:
 - employer: Qualys Inc.
   years: Apr/2015 -- Present
-  duration: 9+ months
+  duration: 10+ months
   job: Malware Research Engineer
   city: Pune
   description:
     - "[+] Reverse engineering and analysis of malware threats"
     - "[+] Working on in-house automation and development projects"
-    - "[+] Writing Yara rules and generating IOCs for malware families"
+    - "[+] Writing Yara rules and generating IOCs (automated) for malware families"
+    - "[+] Technologies: Python, Batch, Shell, Unix, Windows, Windows PE, Malware Analysis"
 - employer: Juniper Networks
   duration: 2 years and 11 months
   years: Apr/2012 -- Feb/2015
@@ -49,6 +56,7 @@ experience:
     - "[+] Testing and updating in-house automation tools that help with coverage analysis against various exploitation frameworks"
     - "[+] Ensuring coverage against latest vulnerabilities and exploits through signature development for Juniper's security portfolio devices"
     - "[+] Regular updates of active signatures to ensure coverage against evolving IDS/IPS evasion techniques as well as for quality assurance"
+    - "[+] Technologies: Python, Batch, Shell, Unix, Windows, IPS, Pcap"
 - employer: SecurView Systems
   duration: 1 year and 5 months
   years: Dec/2010 - Apr/2012
@@ -57,6 +65,7 @@ experience:
   description:
     - "[+] Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
     - "[+] Active member of the Secur-I Research Group. Group activities involved monthly publication of critical vulnerability assessments and concentrated vulnerability research"
+    - "[+] Technologies: Python, Batch, Shell, Unix, Windows, Android, Android Rooting"
 
 academics:
 - subject: M.Tech Software Systems
@@ -105,8 +114,8 @@ courses:
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "Dec 31, 2015"
-  signed:
+  lastupdated: "Feb 04, 2016"
+  signed: Ankur Tyagi
 
 # Settings
 mainfont: Hoefler Text

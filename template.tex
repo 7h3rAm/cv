@@ -67,7 +67,6 @@ $endif$
   filecolor=black,
   urlcolor=[rgb]{0.117,0.682,0.858},
   linkcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
   citecolor=[rgb]{0.117,0.682,0.858}
 }
 
@@ -81,11 +80,11 @@ $if(urls)$
   \begin{multicols}{2}
 $endif$
 
-$if(address)$
-  $for(address)$
-    $address$\\
-  $endfor$
-$endif$
+%$if(address)$
+%  $for(address)$
+%    $address$\\
+%  $endfor$
+%$endif$
 
 \vspace{-10pt}
 $phone$\\
@@ -112,11 +111,11 @@ $if(interest)$
 $endif$
 
 \vspace{20pt}
-\section*{Research}
-$for(research)$
-  \note{$research.patent_date$} \textbf{$research.patent_title$}\\
-  \emph{$research.patent_id$}\\
-  {$research.patent_description$}\\
+\section*{Patents}
+$for(patents)$
+  \note{$patents.patent_date$} \textbf{$patents.patent_title$}\\
+  \emph{$patents.patent_id$}\\
+  {$patents.patent_description$}\\
   \\[.2cm]
 $endfor$
 
@@ -152,9 +151,9 @@ $endfor$
 
 \vspace{25pt}
 $for(trailer)$
-  {$trailer.note$}\\
+  %{$trailer.note$}\\
   Last updated: $trailer.lastupdated$\\
-  \textbf{$trailer.signed$}
+  %\textbf{$trailer.signed$}
 $endfor$
 
 \end{document}
