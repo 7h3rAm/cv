@@ -128,11 +128,21 @@ $for(experience)$
   \\[.2cm]
 $endfor$
 
+\section*{Talks}
+$for(talks)$
+  \textbf{$talks.name$}\\
+  {$talks.description$}\\
+  $for(talks.conferences)$
+    \href{http://$talks.conferences.url$}{$talks.conferences.name$} \hfill\emph{$talks.conferences.date$}\\
+  $endfor$
+  \\[.2cm]
+$endfor$
+
 \section*{Academics}
 $for(academics)$
-  \note{$academics.year$}\textbf{$academics.subject$}, \textbf{$academics.institute$}\\
+  \note{$academics.year$}\textbf{$academics.course$}, \textbf{$academics.institute$}\\
   Thesis: {$academics.thesis$}\\
-  %\emph{CGPA: {$academics.grade$}}\\
+  %\emph{CGPA: {$academics.score$}}\\
   \\[.2cm]
 $endfor$
 
@@ -145,11 +155,11 @@ $endfor$
 \section*{Independent Courses}
 $for(courses)$
   \note{$courses.year$}\textbf{$courses.name$}, \textbf{$courses.institute$}\\
-  \emph{Grade: $courses.grade$}\\
+  \emph{Score: $courses.score$} (\emph{$courses.grade$})\\
   \\[.2cm]
 $endfor$
 
-\vspace{25pt}
+\vspace{10pt}
 $for(trailer)$
   %{$trailer.note$}\\
   Last updated: $trailer.lastupdated$\\

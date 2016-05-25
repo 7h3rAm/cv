@@ -1,5 +1,5 @@
 ---
-# Personal details
+# page #1
 name: Ankur Tyagi
 phone: "+91 721 900 1099"
 email: 7h3rAm@gmail.com
@@ -16,7 +16,6 @@ urls:
 - github.com/7h3rAm
 - 7h3ram.github.io
 
-# Sections
 intro: "I'm an infosec enthusiast with strong technical background in the field of information security. I've solid combination of skills that span malware analysis, exploitation, reverse engineering, protocol decoding, file-format analysis and vulnerability assessment. I'm skilled in applying analytical and technical knowledge to produce practical solutions and have strong interest in solving complex technical issues."
 
 interest:
@@ -36,6 +35,7 @@ patents:
   patent_date: Sep/2014
   patent_description: An attempt towards normalizing web scripts for network security appliances to consume and operate upon.
 
+# page #2
 experience:
 - employer: Qualys Inc.
   years: Apr/2015 -- Present
@@ -67,17 +67,48 @@ experience:
     - "[+] Active member of the Secur-I Research Group. Group activities involved monthly publication of critical vulnerability assessments and concentrated vulnerability research"
     - "[+] Technologies: Python, Batch, Shell, Unix, Windows, Android, Android Rooting"
 
+talks:
+- name: Rudra - The Destroyer of Evil
+  brief: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files. It provides features to scan and generate reports that include file's structural properties, entropy visualization, compression ratio, theoretical minsize, etc. These details, alongwith file-format specific analysis information, help an analyst to understand the type of data embedded in a file and quickly decide if it deserves further investigation. It supports scanning PE files and can perform API scans, anti{debug, vm, sandbox} detection, packer detection, authenticode verification, alongwith Yara, shellcode, and regex detection upon them.
+  description: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files.
+  conferences:
+    - name: Black Hat Asia 2016 Arsenal
+      date: March 31, 2016
+      url: https://www.blackhat.com/asia-16/arsenal.html#ankur-tyagi
+    - name: Black Hat EU 2015 Arsenal
+      date: November 13, 2015
+      url: https://www.blackhat.com/eu-15/arsenal.html#ankur-tyagi
+    - name: DEF CON 23 Demo Labs
+      date: August 8, 2015
+      url: https://www.defcon.org/html/defcon-23/dc-23-demo-labs-schedule.html#Tyagi
+    - name: Black Hat USA 2015 Arsenal
+      date: August 5, 2015
+      url: https://www.blackhat.com/us-15/arsenal.html#ankur-tyagi
+- name: Flowinspect - Network Inspection Tool on Steroids
+  brief: Flowinspect is a tool developed specifically for network monitoring and inspection purposes. It takes network traffic as input and extracts layer 4 flows from it. These flows are then passed through an inspection engine that filters and extracts interesting network sessions. For flows that meet inspection criteria, the output mode dumps match statistics to either stdout or a file or both.
+  description: Flowinspect is a tool developed specifically for network monitoring and inspection purposes.
+  conferences:
+    - name: Black Hat USA 2014 Arsenal
+      date: August 6, 2014
+      url: https://www.blackhat.com/us-14/arsenal.html#Tyagi
+    - name: Nullcon 2014
+      date: February 14, 2014
+      url: http://nullcon.net/website/goa-14/speakers/ankur-tyagi.php
+
+# page #3
 academics:
-- subject: M.Tech Software Systems
+- course: M.Tech Software Systems
   institute: BITS-Pilani
   year: Dec/2014
   thesis: Framework for Automated Inspection of Network Flows
-  grade: 6.65 (Excellent)
-- subject: BE Information Technology
+  score: 6.65
+  grade: Excellent
+- course: BE Information Technology
   institute: Pune University
   year: Jul/2010
-  thesis: Research into ARP Implementation Flaws
-  grade: 6.58 (First Class)
+  thesis: Insider Threats - Research on ARP Security Flaws and Solutions
+  score: 6.58
+  grade: First Class
 
 certifications:
 - name: GIAC Penetration Tester (GPEN)
@@ -94,30 +125,35 @@ courses:
 - name: The Arduino Platform and C Programming
   institute: Coursera - University of California, Irvine
   year: Dec/2015
-  grade: 97.5%
+  score: 97.5%
+  grade: First Class
 - name: Software Security
   institute: Coursera - University of Maryland
   year: Dec/2015
-  grade: 92.3% (w/ Distinction)
+  score: 92.3%
+  grade: Distinction
 - name: An Introduction to Interactive Programming in Python
   institute: Coursera - Rice University
   year: Jan/2014
-  grade: 90.8% (w/ Distinction)
+  score: 90.8%
+  grade: Distinction
 - name: Internet History, Technology and Security
   institute: Coursera - University of Michigan
   year: Dec/2013
-  grade: 94.6% (w/ Distinction)
+  score: 94.6%
+  grade: Distinction
 - name: Malicious Software and its Underground Economy
   institute: Coursera - University of London
   year: Sep/2013
-  grade: 100% (w/ Distinction)
+  score: 100%
+  grade: Distinction
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "May 18, 2016"
+  lastupdated: "May 25, 2016"
   signed: Ankur Tyagi
 
-# Settings
+# settings
 mainfont: Hoefler Text
 fontsize: 12pt
 lang: English
