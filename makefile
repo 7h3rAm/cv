@@ -1,5 +1,8 @@
-AnkurTyagi.pdf: template.tex AnkurTyagi.yml
+priyam: PriyamTyagi.tex PriyamTyagi.yml
+	pandoc $(filter-out $<,$^ ) -o PriyamTyagi.pdf --latex-engine=xelatex --template=$<
+
+ankur: AnkurTyagi.tex AnkurTyagi.yml
 	pandoc $(filter-out $<,$^ ) -o AnkurTyagi.pdf --latex-engine=xelatex --template=$<
 
 clean:
-	rm AnkurTyagi.pdf
+	rm PriyamTyagi.pdf AnkurTyagi.pdf

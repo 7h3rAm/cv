@@ -1,0 +1,86 @@
+---
+name: Priyam Tyagi
+phone: "+1 (650) 542 1192"
+email: pri07vns@gmail.com
+
+address:
+- 807 Catamaran Street Apt 2
+- Foster City, CA 94404
+
+# Insert URLs without http://
+urls:
+- www.linkedin.com/in/priyamstyagi
+- twitter.com/tyagipri
+
+intro: "I'm working as part of Application Development and Maintenance team under the Financial Services (FS) vertical at Infosys. I'm an enthusiastic and hardworking individual with strong communication and collaborative skills."
+
+skills:
+- Java, J2EE
+- Spring Framework, Spring Batch
+- "Web Services: REST, SOAP"
+- "Messaging: JMS"
+- "ORM: Hibernate"
+- "Dependency Management: Maven"
+- "Version Control: Perforce"
+- "Testing: JUnit"
+
+experience:
+- employer: Infosys
+  years: Jul / 2016 -- Present
+  duration: 1+ years
+  job: Technology Analyst
+  city: Pune
+  description:
+    - "[+] Implemented REST API calls for backend services exposed to UI and SOAP over JMS for downstream"
+    - "[+] Worked on a complete revamp of existing payment processes, resulting in a streamlined call flow for UI and backend services interaction"
+    - "[+] Worked on development and enhancement of features that enrich user experience while using client's banking services"
+    - "[+] Responsible for handling feature requests and critical customer escalations"
+
+- employer: Infosys
+  years: Feb / 2014 -- Jun / 2016
+  duration: 2+ years
+  job: Sr. Systems Engineer
+  city: Bangalore/Pune
+  description:
+    - "[+] Worked with Spring Batch to design and implement batch processing for End of Day settlements/clearings"
+    #- "[+] Worked on a product that helped with credit settlements of multiple recipients for corporate clients"
+    - "[+] Contributed multiple ideas focusing on innovation and improving business processes"
+    - "[+] Played role of a mentor for new recruits in team"
+
+- employer: Infosys
+  years: Aug / 2011 -- Jan / 2014
+  duration: 2+ years
+  job: System Engineer
+  city: Bangalore
+  description:
+    - "[+] Worked for a major US bank focusing on resolving issues with backend processes"
+    - "[+] Worked on an independent module involving development of web services, adding new features and end-to-end testing"
+    - "[+] Learned fundamentals of US Payments domain"
+
+academics:
+- course: B.Tech Electronics and Communication Engineering
+  institute: Jaypee University of Engineering and Technology
+  year: Jul/2011
+
+certifications:
+- name: Certified Java Programmer
+  institute: Infosys
+  year: Mar/2014
+- name: Certified Spring Developer
+  institute: Infosys
+  year: Apr/2016
+- name: Certified NoSQL Developer
+  institute: Infosys
+  year: Mar/2016
+
+trailer:
+- note: "Additional details available upon request."
+  lastupdated: "April 2017"
+  signed: Priyam Tyagi
+
+# settings
+mainfont: Hoefler Text
+fontsize: 12pt
+lang: English
+geometry: a4paper, left=27mm, right=27mm, top=27mm, bottom=27mm
+---

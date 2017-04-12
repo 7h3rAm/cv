@@ -9,21 +9,21 @@ address:
 - Datta Mandir Road, Wakad
 - Pune, India (Pincode - 411057)
 
-# Insert URLs without http://
+# Insert URLs without
 urls:
 - in.linkedin.com/in/ankurstyagi
 - twitter.com/7h3rAm
 - github.com/7h3rAm
 - 7h3ram.github.io
 
-intro: "I'm an infosec enthusiast with strong technical background in the field of information security. I've solid combination of skills that span malware analysis, exploitation, reverse engineering, protocol decoding, file-format analysis and vulnerability assessment. I'm skilled in applying analytical and technical knowledge to produce practical solutions and have strong interest in solving complex technical issues."
+intro: "I'm an infosec enthusiast with strong technical background in the field of information security. I've a solid combination of skills that span malware analysis, network security and vulnerability assessment. I'm skilled in applying analytical and technical knowledge to produce practical solutions and have strong interest in solving complex technical issues."
 
 interest:
-- Python, C/C++, x86 Assembly
+- Python, C, x86 Assembly
+- Network/File Forensics, IDS/IPS
 - Research Methodologies and Innovation
-- Malware Analysis, Reverse Engineering
 - Security Intelligence, Vulnerability Assessment
-- Network/File-format Forensics, Intrusion Detection/Prevention
+- AntiMalware, Endpoint Detection and Response
 
 patents:
 - patent_title: Using A Probability-based Model To Detect Random Content In A Protocol Field Associated With Network Traffic
@@ -43,10 +43,12 @@ experience:
   job: Malware Research Engineer
   city: Pune
   description:
-    - "[+] Reverse engineering and analysis of malware threats"
-    - "[+] Working on in-house automation and development projects"
-    - "[+] Writing Yara rules and generating IOCs (automated) for malware families"
-    - "[+] Technologies: Python, Batch, Shell, Unix, Windows, Windows PE, Malware Analysis"
+    - "[+] Research automated (Yara/IoC) rule creation for generic threat coverage"
+    - "[+] Automated sourcing, filtering and scanning of malware samples"
+    - "[+] Reverse engineering and analysis of malware samples"
+    - "[+] Working on various in-house automation and development projects"
+    - "[+] Technologies: Python, Shell, Unix, Windows, AntiMalware, EDR"
+
 - employer: Juniper Networks
   duration: 2 years and 11 months
   years: Apr/2012 -- Feb/2015
@@ -56,7 +58,7 @@ experience:
     - "[+] Testing and updating in-house automation tools that help with coverage analysis against various exploitation frameworks"
     - "[+] Ensuring coverage against latest vulnerabilities and exploits through signature development for Juniper's security portfolio devices"
     - "[+] Regular updates of active signatures to ensure coverage against evolving IDS/IPS evasion techniques as well as for quality assurance"
-    - "[+] Technologies: Python, Batch, Shell, Unix, Windows, IPS, Pcap"
+    - "[+] Technologies: Python, Shell, Unix, Windows, IDS, IPS"
 - employer: SecurView Systems
   duration: 1 year and 5 months
   years: Dec/2010 - Apr/2012
@@ -65,35 +67,38 @@ experience:
   description:
     - "[+] Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
     - "[+] Active member of the Secur-I Research Group. Group activities involved monthly publication of critical vulnerability assessments and concentrated vulnerability research"
-    - "[+] Technologies: Python, Batch, Shell, Unix, Windows, Android, Android Rooting"
+    - "[+] Technologies: Python, Shell, Unix, Windows"
 
 talks:
 - name: Rudra - The Destroyer of Evil
   brief: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files. It provides features to scan and generate reports that include file's structural properties, entropy visualization, compression ratio, theoretical minsize, etc. These details, alongwith file-format specific analysis information, help an analyst to understand the type of data embedded in a file and quickly decide if it deserves further investigation. It supports scanning PE files and can perform API scans, anti{debug, vm, sandbox} detection, packer detection, authenticode verification, alongwith Yara, shellcode, and regex detection upon them.
   description: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files.
   conferences:
+    - name: Black Hat USA 2016 Arsenal
+      date: August 3, 2016
+      url: www.blackhat.com/us-16/arsenal.html#ankur-tyagi
     - name: Black Hat Asia 2016 Arsenal
       date: March 31, 2016
-      url: https://www.blackhat.com/asia-16/arsenal.html#ankur-tyagi
+      url: www.blackhat.com/asia-16/arsenal.html#ankur-tyagi
     - name: Black Hat EU 2015 Arsenal
       date: November 13, 2015
-      url: https://www.blackhat.com/eu-15/arsenal.html#ankur-tyagi
+      url: www.blackhat.com/eu-15/arsenal.html#ankur-tyagi
     - name: DEF CON 23 Demo Labs
       date: August 8, 2015
-      url: https://www.defcon.org/html/defcon-23/dc-23-demo-labs-schedule.html#Tyagi
+      url: www.defcon.org/html/defcon-23/dc-23-demo-labs-schedule.html#Tyagi
     - name: Black Hat USA 2015 Arsenal
       date: August 5, 2015
-      url: https://www.blackhat.com/us-15/arsenal.html#ankur-tyagi
+      url: www.blackhat.com/us-15/arsenal.html#ankur-tyagi
 - name: Flowinspect - Network Inspection Tool on Steroids
   brief: Flowinspect is a tool developed specifically for network monitoring and inspection purposes. It takes network traffic as input and extracts layer 4 flows from it. These flows are then passed through an inspection engine that filters and extracts interesting network sessions. For flows that meet inspection criteria, the output mode dumps match statistics to either stdout or a file or both.
   description: Flowinspect is a tool developed specifically for network monitoring and inspection purposes.
   conferences:
     - name: Black Hat USA 2014 Arsenal
       date: August 6, 2014
-      url: https://www.blackhat.com/us-14/arsenal.html#Tyagi
+      url: www.blackhat.com/us-14/arsenal.html#Tyagi
     - name: Nullcon 2014
       date: February 14, 2014
-      url: http://nullcon.net/website/goa-14/speakers/ankur-tyagi.php
+      url: nullcon.net/website/goa-14/speakers/ankur-tyagi.php
 
 # page #3
 academics:
@@ -150,7 +155,7 @@ courses:
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "May 25, 2016"
+  lastupdated: "Oct 2, 2016"
   signed: Ankur Tyagi
 
 # settings
