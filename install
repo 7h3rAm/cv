@@ -1,0 +1,7 @@
+apt-get install pandoc
+apt-get install xelatex
+apt-get install texlive-xetex
+apt-get install texlive-geometry
+apt-get install texlive-latex-base
+apt-get install texlive-latex-extra
+apt-get install texlive-fonts-recommended
