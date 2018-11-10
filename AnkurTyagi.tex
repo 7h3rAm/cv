@@ -80,11 +80,11 @@ $if(urls)$
   \begin{multicols}{2}
 $endif$
 
-%$if(address)$
-%  $for(address)$
-%    $address$\\
-%  $endfor$
-%$endif$
+$if(address)$
+  $for(address)$
+    $address$\\
+  $endfor$
+$endif$
 
 \vspace{-10pt}
 $phone$\\
@@ -93,28 +93,30 @@ $phone$\\
 $if(urls)$
   \columnbreak
   $for(urls)$
-    \href{http://$urls$}{$urls$}\\
+    \href{https://$urls$}{$urls$}\\
   $endfor$
   \end{multicols}
 $endif$
 
-\vspace{25pt}
+\vspace{15pt}
 $intro$
 
-\subsection*{Areas of Interest}
-$if(interest)$
+\subsection*{Interests}
+$if(expertise)$
 \begin{itemize}
-  $for(interest)$
-    \item $interest$
+  $for(expertise)$
+    \item $expertise$
   $endfor$
 \end{itemize}
 $endif$
 
-\vspace{20pt}
+\vspace{15pt}
 \section*{Patents}
 $for(patents)$
   \note{$patents.patent_date$} \textbf{$patents.patent_title$}\\
-  \emph{$patents.patent_id$}\\
+  $if(patents.patent_id)$
+    \emph{\href{$patents.patent_url$}{$patents.patent_id$}}\\
+  $endif$
   {$patents.patent_description$}\\
   \\[.2cm]
 $endfor$
@@ -131,11 +133,17 @@ $endfor$
 \section*{Talks}
 $for(talks)$
   \textbf{$talks.name$}\\
-  {$talks.description$}\\
+  {$talks.brief$}\\
   $for(talks.conferences)$
-    \href{http://$talks.conferences.url$}{$talks.conferences.name$} \hfill\emph{$talks.conferences.date$}\\
+    \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill\emph{$talks.conferences.date$}\\
   $endfor$
   \\[.2cm]
+$endfor$
+
+\section*{Media}
+$for(media)$
+  \note{$media.year$}\textbf{$media.topic$}, \href{$media.url$}{$media.publication$}\\
+  \\[.1cm]
 $endfor$
 
 \section*{Academics}
