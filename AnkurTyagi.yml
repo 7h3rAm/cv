@@ -206,6 +206,6 @@ trailer:
 # settings
 mainfont: Hoefler Text
 fontsize: 12pt
-lang: English
+lang: en-US
 geometry: a4paper, left=27mm, right=27mm, top=27mm, bottom=27mm
 ---
