@@ -104,13 +104,12 @@ $for(experience)$
   $for(experience.description)$
     • {$experience.description$}\\
   $endfor$
-  \\[.2cm]
+  \\[.05cm]
 $endfor$
-
 
 \section*{Patents}
 $for(patents)$
-  {\href{$patents.patent_url$}{$patents.patent_title$}} \hfill\emph{$patents.patent_date$}\\
+  \href{$patents.patent_url$}{$patents.patent_title$} \hfill\emph{$patents.patent_date$}\\
 $endfor$
 
 \section*{Talks}
@@ -120,7 +119,7 @@ $for(talks)$
   $for(talks.conferences)$
     \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill\emph{$talks.conferences.date$}\\
   $endfor$
-  \\[.2cm]
+  \\[.05cm]
 $endfor$
 
 \section*{Media}
@@ -131,9 +130,8 @@ $endfor$
 \section*{Academics}
 $for(academics)$
   $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill\emph{$academics.year$}\\
-  Thesis: \href{$academics.thesis_url$}{$academics.thesis$}\\
-  %\emph{CGPA: {$academics.score$}}\\
-  \\[.2cm]
+  {\footnotesize Thesis: \href{$academics.thesis_url$}{$academics.thesis$}}\\
+  \\[.05cm]
 $endfor$
 
 \section*{Certifications}
@@ -141,6 +139,7 @@ $for(certifications)$
   \href{$certifications.url$}{$certifications.name$} \hfill\emph{$certifications.year$}\\
 $endfor$
 
+\vspace{1cm}
 $for(trailer)$
   %{$trailer.note$}\\
   Last updated: $trailer.lastupdated$\\
