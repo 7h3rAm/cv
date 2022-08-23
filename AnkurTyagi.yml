@@ -1,7 +1,13 @@
 ---
+title: AnkurTyagi-CV
+mainfont: Hoefler Text
+fontsize: 9pt
+lang: en-US
+geometry: a4paper, left=2.7cm, right=2.7cm, top=2cm, bottom=2.7cm
+
 name: Ankur Tyagi
 phone: "+1 650 542 1134"
-email: 7h3rAm@gmail.com
+email: ankurt.20@gmail.com
 
 address:
 - 807 Catamaran St, Apt. 2
@@ -11,85 +17,145 @@ urls:
 - in.linkedin.com/in/ankurstyagi
 - twitter.com/7h3rAm
 - github.com/7h3rAm
-- 7h3ram.github.io
+- 7h3rAm.github.io
 
-intro: "I'm an infosec enthusiast working in targeted research space with the goal of delivering innovative and intelligent solutions. I've a unique combination of skills that span malware analysis, network security and vulnerability assessment. I'm skilled in applying analytical and technical knowledge to produce practical solutions and have strong interest in solving complex technical issues."
+intro: "I'm an infosec enthusiast with a strong background in network security (IDS/IPS), anti-malware technologies (EDR/XDR), research methodologies and innovation."
 
-expertise:
-- Network Security (IDS/IPS)
-- OSINT and Vulnerability Assessment
-- AntiMalware (Endpoint Detection and Response)
-- Research Methodologies and Innovation
-
-patents:
-- patent_title: Method and Apparatus for Intelligent Aggregation of Threat Behavior for the Detection of Malware
-  patent_id: US10104101B1
-  patent_url: https://patents.google.com/patent/US10104101B1/
-  patent_date: Apr/2017
-  patent_description: An attempt towards automated selection and grouping of aggregated threat behavior indicators depicting dominant malware characteristics.
-- patent_title: Using A Probability-based Model To Detect Random Content In A Protocol Field Associated With Network Traffic
-  patent_id: US9680832B1
-  patent_url: https://patents.google.com/patent/US9680832B1/
-  patent_date: Dec/2014
-  patent_description: A novel idea based upon stochastic processes derived machine learning model to identify and classify random/malicious content in network traffic.
-- patent_title: Deobfuscating Scripted Language For Network Intrusion Detection Using A Regular Expression Signature
-  patent_id: US9419991B2
-  patent_url: https://patents.google.com/patent/US9419991B2/
-  patent_date: Sep/2014
-  patent_description: An attempt towards normalizing web scripts for network security appliances to consume and operate upon.
+specialties:
+- Network/Host forensics
+- Adversary Tactics, Techniques & Procedures (TTPs)
+- Research methodologies and innovation
 
 experience:
 - employer: Qualys Inc.
-  years: Jan/2017 -- Present
-  duration: 1+ year
+  years: Jan/2019 - Present
+  duration: 3 years and 8 months
+  job: Principal Engineer
+  city: Foster City
+  description:
+    - "Product research, design and PoC: Breach Simulation, Security Control Validation, Attack Surface Mapping, Asset Remediation Trendmap"
+    - "Research and automation: Threat Intelligence feeds evaluation and aggregation, False Positive validation, event whitelisting, risk scoring, rule parsers and converters"
+    - "Mitre ATT&CK TTP correlation (adversary killchain), quantification and scoring"
+    - "Subject Matter Expert for research/innovation and multiple automation worflows"
+- employer: Qualys Inc.
+  years: Jan/2017 - Jan/2019
+  duration: 2 years and 1 month
   job: Sr. Malware Research Engineer
   city: Foster City
   description:
-    - "[+] Research towards automated aggregation of threat behavior, filed for US patent and implemented as part of a customer facing product"
-    - "[+] Collaborating with various teams as a Subject Matter Expert for AntiMalware and network security research initiatives"
-    - "[+] Working on multiple research ideas that could be leveraged as Intellectual Property"
-    - "[+] First responder to provide detection against active malware campaigns"
+    - "Research towards automated aggregation of threat behavior, filed for US patent and implemented as part of a customer facing product"
+    - "Worked with various teams as a Subject Matter Expert for AntiMalware and network security research initiatives"
+    - "Worked on multiple research ideas that could be leveraged as Intellectual Property"
+    - "First responder to provide detection against active malware campaigns"
 - employer: Qualys Inc.
-  years: Apr/2015 -- Jan/2017
+  years: Apr/2015 - Jan/2017
   duration: 1 year and 10 months
   job: Malware Research Engineer
   city: Pune
   description:
-    - "[+] Research automated (Yara/IoC) rule creation for generic threat coverage"
-    - "[+] Automated sourcing, filtering and scanning of malware samples"
-    - "[+] Reverse engineering and analysis of malware samples"
-    - "[+] Working on various in-house automation and development projects"
-    - "[+] Technologies: Python, Shell, Unix, Windows, AntiMalware, EDR"
+    - "Research automated (Yara/IoC) rule creation for generic threat coverage"
+    - "Automated sourcing, filtering and scanning of malware samples"
+    - "Reverse engineering and analysis of malware samples"
+    - "Worked on various in-house automation and development projects"
+    - "Technologies: Python, Shell, Unix, Windows, AntiMalware, EDR"
 - employer: Juniper Networks
   duration: 2 years and 11 months
-  years: Apr/2012 -- Feb/2015
+  years: Apr/2012 - Feb/2015
   job: Security Research Engineer
   city: Bangalore
   description:
-    - "[+] Testing and updating in-house automation tools that help with coverage analysis against various exploitation frameworks"
-    - "[+] Ensuring coverage against latest vulnerabilities and exploits through signature development for Juniper's security portfolio devices"
-    - "[+] Regular updates of active signatures to ensure coverage against evolving IDS/IPS evasion techniques as well as for quality assurance"
-    - "[+] Technologies: Python, Shell, Unix, Windows, IDS, IPS"
+    - "Testing and updating in-house automation tools that help with coverage analysis against various exploitation frameworks"
+    - "Ensured coverage against latest vulnerabilities and exploits through signature development for Juniper's security portfolio devices"
+    - "Regular updates of active signatures to ensure coverage against evolving IDS/IPS evasion techniques as well as for quality assurance"
+    - "Technologies: Python, Shell, Unix, Windows, IDS, IPS"
 - employer: SecurView Systems
   duration: 1 year and 5 months
   years: Dec/2010 - Apr/2012
   job: Information Security Engineer
   city: Pune
   description:
-    - "[+] Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
-    - "[+] Active member of the Secur-I Research Group. Group activities involved monthly publication of critical vulnerability assessments and concentrated vulnerability research"
-    - "[+] Technologies: Python, Shell, Unix, Windows"
+    - "Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
+    - "Active member of the Secur-I Research Group with activities spanning monthly publication of critical vulnerability assessments and concentrated vulnerability research"
+    - "Technologies: Python, Shell, Unix, Windows"
+
+patents_portfolio_url: "https://patents.google.com/?q=ankur+tyagi&assignee=Juniper+Networks%2CQualys"
+patents:
+- patent_title: Attack Path and Graph Creation Based on User and System Profiling
+  patent_id: US20210021629A1
+  patent_url: https://patents.google.com/patent/US20210021629A1/
+  patent_date: Jul/2019
+- patent_title: Attack Kill Chain Generation and Utilization for Threat Analysis
+  patent_id: US20200327224A1
+  patent_url: https://patents.google.com/patent/US20200327224A1/
+  patent_date: Apr/2019
+- patent_title: Asset Remediation Trend Map Generation and Utilization for Threat Mitigation
+  patent_id: US20200329055A1
+  patent_url: https://patents.google.com/patent/US20200329055A1/
+  patent_date: Apr/2019
+- patent_title: DSL for Simulating a Threat-Actor and Adversarial TTPs
+  patent_id: US10965709B2
+  patent_url: https://patents.google.com/patent/US10965709B2/
+  patent_date: Apr/2019
+- patent_title: DSL for Defending Against a Threat-Actor and Adversarial TTPs
+  patent_id: US10965712B2
+  patent_url: https://patents.google.com/patent/US10965712B2/
+  patent_date: Apr/2019
+- patent_title: DSL for Threat-Actor Deception
+  patent_id: US10958686B2
+  patent_url: https://patents.google.com/patent/US10958686B2/
+  patent_date: Apr/2019
+- patent_title: Method and Apparatus for Intelligent Aggregation of Threat Behavior
+  patent_id: US10104101B1
+  patent_url: https://patents.google.com/patent/US10104101B1/
+  patent_date: Apr/2017
+  patent_description: An attempt towards automated selection and grouping of aggregated threat behavior indicators depicting dominant malware characteristics.
+- patent_title: Using A Probability-based Model To Detect Random Content In Network Traffic
+  patent_id: US9680832B1
+  patent_url: https://patents.google.com/patent/US9680832B1/
+  patent_date: Dec/2014
+  patent_description: A novel idea based upon stochastic processes derived machine learning model to identify and classify random/malicious content in network traffic.
+- patent_title: Deobfuscating Scripted Language For Network Intrusion Detection
+  patent_id: US9419991B2
+  patent_url: https://patents.google.com/patent/US9419991B2/
+  patent_date: Sep/2014
+  patent_description: An attempt towards normalizing web scripts for network security appliances to consume and operate upon.
 
 talks:
+- name: svachal + machinescli
+  brief: These tools are useful for creating and learning from CTF writeups
+  description: Writeups for CTF challenges and machines are a critical learning resource for our community. For the author, it presents an opportunity to document their methodology, tips/tricks and progress. For the audience, it serves as reference material. Oftentimes, authors switch roles and become the audience to learn from their own work. This demo aims to showcase tools, svachal and machinescli, developed with these insights. These work in conjunction to help users curate their learning in .yml structured files, find insights and query this knowledge base as and when needed.
+  conferences:
+    - name: DEF CON 30 Demo Labs
+      date: August 13, 2022
+      url: https://forum.defcon.org/node/242258
+- name: Angad - Malware Detection using Multi-Dimensional Visualization
+  brief: Angad is a tool that can perform visual malware clustering using Hilbert Curves
+  description: Angad is a framework to automate classification of an unlabelled malware dataset using multi-dimensional modelling. The input dataset is analyzed to collect various attributes which are then arranged in a number of feature vectors. These vectors are then individually visualized, indexed and then queried for each new input file. Matching vectors are labelled as per their AV detection categories (could be changed to a heuristics approach if needed). If dynamic behavior or network traffic details are available, respective vectors are converted into activity graphs that depict evolution on a predefined time scale. This results into an animation of a malware or a malware category's behaviorial traits and is useful in identifying activity overlaps across the input dataset.
+  conferences:
+    - name: SecTor 2018
+      date: October 13, 2018
+      url: https://sector.ca/sessions/angad-a-malware-detection-framework-using-multi-dimensional-visualization/
+    - name: BSides Zurich 2018
+      date: September 14, 2018
+      url: https://bsideszh.ch/agenda/abstracts/
+    - name: GrrCON 2018
+      date: September 7, 2018
+      url: http://grrcon.com/presentations/
+    - name: DEF CON 26 Demo Labs
+      date: August 11, 2018
+      url: https://www.defcon.org/html/defcon-26/dc-26-demolabs.html#Angad
 - name: Visual Network and File Forensics
-  brief: This presentation aims to demo the effectiveness of visual tooling for malware and file-format forensics
+  brief: This presentation showcases the effectiveness of visual tooling for malware and file-format forensics
   description: This presentation aims to demo the effectiveness of visual tooling for malware and file-format forensics. It will cover structural analysis and visualization of malware and network artifacts. Various techniques like entropy/n-gram visualization, using compression-ratio and theoretical minsize to identify file type and packed content will be shown. Along with this, a framework that helps automate these tasks will be presented. Attendees with an interest in network monitoring, signature writing, malware analysis and forensics will find this presentation to be useful.
   conferences:
     - name: DEF CON 25 Packet Hacking Village
       date: July 29, 2017
       url: https://www.wallofsheep.com/pages/dc25#atyagi
+    - name: Virus Bulletin 2017
+      date: (could not attend)
+      url: https://www.virusbulletin.com/conference/vb2017/abstracts/visual-malware-forensics
 - name: Rudra - The Destroyer of Evil
-  brief: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files
+  brief: Rudra provides a framework for exhaustive analysis of PCAP and PE files
   description: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files. It provides features to scan and generate reports that include file's structural properties, entropy visualization, compression ratio, theoretical minsize, etc. These details, alongwith file-format specific analysis information, help an analyst to understand the type of data embedded in a file and quickly decide if it deserves further investigation. It supports scanning PE files and can perform API scans, anti{debug, vm, sandbox} detection, packer detection, authenticode verification, alongwith Yara, shellcode, and regex detection upon them.
   conferences:
     - name: DEF CON 24 Demo Labs
@@ -114,7 +180,7 @@ talks:
       date: August 5, 2015
       url: https://www.blackhat.com/us-15/arsenal.html#ankur-tyagi
 - name: Flowinspect - Network Inspection Tool on Steroids
-  brief: Flowinspect is a tool developed specifically for network monitoring and inspection purposes
+  brief: Flowinspect is a tool for network monitoring and inspection purposes
   description: Flowinspect is a tool developed specifically for network monitoring and inspection purposes. It takes network traffic as input and extracts layer 4 flows from it. These flows are then passed through an inspection engine that filters and extracts interesting network sessions. For flows that meet inspection criteria, the output mode dumps match statistics to either stdout or a file or both.
   conferences:
     - name: Black Hat USA 2014 Arsenal
@@ -125,10 +191,6 @@ talks:
       url: https://nullcon.net/website/goa-14/speakers/ankur-tyagi.php
 
 media:
-- topic: Visual Malware Forensics
-  publication: Virus Bulletin
-  year: Oct/2017
-  url: https://www.virusbulletin.com/conference/vb2017/abstracts/visual-malware-forensics
 - topic: Bossie Awards 2017 - The best networking and security software
   publication: InfoWorld
   year: Sep/2017
@@ -137,7 +199,7 @@ media:
   publication: HelpNet Security
   year: Sep/2017
   url: https://www.helpnetsecurity.com/2017/09/12/rudra-file-forensics/
-- topic: Rudra - Framework for automated inspection of network capture files
+- topic: Rudra - Framework for inspection of network capture files
   publication: HelpNet Security
   year: Sep/2015
   url: https://www.helpnetsecurity.com/2015/09/04/rudra-framework-for-automated-inspection-of-network-capture-files/
@@ -149,14 +211,18 @@ media:
 academics:
 - course: M.Tech Software Systems
   institute: BITS-Pilani
+  url: https://www.bits-pilani.ac.in/
   year: Dec/2014
   thesis: Rudra - Framework for Automated Inspection of Network Flows
+  thesis_url: https://github.com/7h3rAm/rudra
   score: 6.65
   grade: Excellent
 - course: BE Information Technology
   institute: Pune University
+  url: http://www.unipune.ac.in/
   year: Jul/2010
   thesis: Insider Threats - Research on ARP Security Flaws and Solutions
+  thesis_url: https://github.com/7h3rAm/arp-secur
   score: 6.58
   grade: First Class
 
@@ -164,11 +230,14 @@ certifications:
 - name: GIAC Penetration Tester (GPEN)
   institute: SANS
   year: Mar/2012
+  url: https://www.giac.org/certifications/penetration-tester-gpen/
 - name: Certified Ethical Hacker (CEH)
   institute: EC-Council
   year: May/2011
+  url: https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/
 - name: Cisco Certified Network Security Associate (CCNA)
   institute: Cisco
+  url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html
   year: Jan/2010
 
 courses:
@@ -200,12 +269,7 @@ courses:
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "Jan 24, 2018"
+  lastupdated: "Aug 22, 2022"
   signed: Ankur Tyagi
 
-# settings
-mainfont: Hoefler Text
-fontsize: 12pt
-lang: en-US
-geometry: a4paper, left=27mm, right=27mm, top=27mm, bottom=27mm
 ---

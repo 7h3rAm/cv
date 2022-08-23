@@ -29,15 +29,13 @@ $endif$
 
 % TYPOGRAPHY
 %--------------------------------
+\usepackage{libertine}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \usepackage[none]{hyphenat}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
-% Cool ampersand
-\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
 
 % MARGIN NOTES
 %--------------------------------
@@ -61,8 +59,8 @@ $endif$
 \hypersetup
 {
   pdfauthor={$name$},
-  pdfsubject={$name$'s CV},
-  pdftitle={$name$'s CV},
+  pdfsubject={$title$},
+  pdftitle={$title$},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
   urlcolor=[rgb]{0.117,0.682,0.858},
@@ -98,36 +96,21 @@ $if(urls)$
   \end{multicols}
 $endif$
 
-\vspace{15pt}
 $intro$
-
-\subsection*{Interests}
-$if(expertise)$
-\begin{itemize}
-  $for(expertise)$
-    \item $expertise$
-  $endfor$
-\end{itemize}
-$endif$
-
-\vspace{15pt}
-\section*{Patents}
-$for(patents)$
-  \note{$patents.patent_date$} \textbf{$patents.patent_title$}\\
-  $if(patents.patent_id)$
-    \emph{\href{$patents.patent_url$}{$patents.patent_id$}}\\
-  $endif$
-  {$patents.patent_description$}\\
-  \\[.2cm]
-$endfor$
 
 \section*{Experience}
 $for(experience)$
-  \note{$experience.years$\\($experience.duration$)} \textbf{$experience.job$} at \textbf{$experience.employer$}\\
+  \textbf{$experience.job$} at \textbf{$experience.employer$} \hfill\emph{$experience.years$}\\
   $for(experience.description)$
-    {$experience.description$}\\
+    • {$experience.description$}\\
   $endfor$
   \\[.2cm]
+$endfor$
+
+
+\section*{Patents}
+$for(patents)$
+  {\href{$patents.patent_url$}{$patents.patent_title$}} \hfill\emph{$patents.patent_date$}\\
 $endfor$
 
 \section*{Talks}
@@ -142,32 +125,22 @@ $endfor$
 
 \section*{Media}
 $for(media)$
-  \note{$media.year$}\textbf{$media.topic$}, \href{$media.url$}{$media.publication$}\\
-  \\[.1cm]
+  $media.topic$, \href{$media.url$}{$media.publication$} \hfill\emph{$media.year$}\\
 $endfor$
 
 \section*{Academics}
 $for(academics)$
-  \note{$academics.year$}\textbf{$academics.course$}, \textbf{$academics.institute$}\\
-  Thesis: {$academics.thesis$}\\
+  $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill\emph{$academics.year$}\\
+  Thesis: \href{$academics.thesis_url$}{$academics.thesis$}\\
   %\emph{CGPA: {$academics.score$}}\\
   \\[.2cm]
 $endfor$
 
 \section*{Certifications}
 $for(certifications)$
-  \note{$certifications.year$}\textbf{$certifications.name$}\\
-  \\[.2cm]
+  \href{$certifications.url$}{$certifications.name$} \hfill\emph{$certifications.year$}\\
 $endfor$
 
-\section*{Independent Courses}
-$for(courses)$
-  \note{$courses.year$}\textbf{$courses.name$}, \textbf{$courses.institute$}\\
-  %\emph{Score: $courses.score$} (\emph{$courses.grade$})\\
-  \\[.2cm]
-$endfor$
-
-\vspace{10pt}
 $for(trailer)$
   %{$trailer.note$}\\
   Last updated: $trailer.lastupdated$\\

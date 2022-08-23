@@ -29,15 +29,13 @@ $endif$
 
 % TYPOGRAPHY
 %--------------------------------
+\usepackage{libertine}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \usepackage[none]{hyphenat}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
-% Cool ampersand
-\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
 
 % MARGIN NOTES
 %--------------------------------
@@ -61,8 +59,8 @@ $endif$
 \hypersetup
 {
   pdfauthor={$name$},
-  pdfsubject={$name$'s CV},
-  pdftitle={$name$'s CV},
+  pdfsubject={$title$},
+  pdftitle={$title$},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
   urlcolor=[rgb]{0.117,0.682,0.858},
@@ -111,30 +109,27 @@ $endif$
 
 \section*{Experience}
 $for(experience)$
-  \note{$experience.years$\\($experience.duration$)} \textbf{$experience.job$} at \textbf{$experience.employer$}\\
+  \textbf{$experience.job$} at \textbf{$experience.employer$} \hfill\emph{$experience.years$}\\
   $for(experience.description)$
-    {$experience.description$}\\
+    • {$experience.description$}\\
   $endfor$
   \\[.2cm]
 $endfor$
 
 \section*{Academics}
 $for(academics)$
-  \note{$academics.year$}\textbf{$academics.course$}, \textbf{$academics.institute$}\\
-  \\[.2cm]
+  $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill\emph{$academics.year$}\\
 $endfor$
 
 \section*{Certifications}
 $for(certifications)$
-  \note{$certifications.year$}\textbf{$certifications.name$}\\
-  \\[.2cm]
+  \href{$certifications.url$}{$certifications.name$} \hfill\emph{$certifications.year$}\\
 $endfor$
 
-\vspace{5pt}
 $for(trailer)$
   %{$trailer.note$}\\
   Last updated: $trailer.lastupdated$\\
-  \textbf{$trailer.signed$}
+  %\textbf{$trailer.signed$}
 $endfor$
 
 \end{document}
