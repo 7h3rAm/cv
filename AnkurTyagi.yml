@@ -35,7 +35,7 @@ experience:
   description:
     - "Product research, design and PoC: Breach Simulation, Security Control Validation, Attack Surface Mapping, Asset Remediation Trendmap"
     - "Research and automation: Threat Intelligence feeds evaluation and aggregation, False Positive validation, event whitelisting, risk scoring, rule parsers and converters"
-    - "Mitre ATT&CK TTP correlation (adversary killchain), quantification and scoring"
+    - "MITRE ATT&CK TTP correlation (adversary killchain), quantification and scoring"
     - "Subject Matter Expert for research/innovation and multiple automation worflows"
 - employer: Qualys Inc.
   years: Jan/2017 - Jan/2019
