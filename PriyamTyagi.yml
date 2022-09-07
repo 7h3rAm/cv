@@ -6,28 +6,30 @@ lang: en-US
 geometry: a4paper, left=2.7cm, right=2.7cm, top=2cm, bottom=2.7cm
 
 name: Priyam Tyagi
-phone: "+1 (650) 542 1192"
+phone: +1 650-542-1192
 email: pri07vns@gmail.com
 
-address:
-- 807 Catamaran Street Apt 2
-- Foster City, CA 94404
+addressline1: 807 Catamaran Street Apt 2
+addressline2: Foster City, CA 94404
 
-urls:
-- in.linkedin.com/in/priyamstyagi
-- twitter.com/tyagipri
-- github.com/priyamtyagi
+linkedin: in.linkedin.com/in/priyamstyagi
+twitter: twitter.com/tyagipri
+github: github.com/priyamtyagi
 
-intro: "As a Java developer with 5+ years of experience I am seeking full-time opportunities in a similar role. I am an enthusiastic and hardworking individual with strong communication and collaborative skills."
+intro1: "I am seeking full-time opportunities as a Java developer with 5+ years of experience. I am an enthusiastic and hardworking individual with strong communication and collaborative skills."
+intro2: "I have worked with Infosys focusing fulltime on Bank of America payments backend. I had the opportunity to learn about domestic US payments and transfers, international remittances, disbursements etc. I consider the following as major milestones in my stint with BofA:"
+intro3: "• Updating all SOAP-based web services to RESTful services"
+intro4: "• Redesign and implementation of spring batches to support digital disbursements"
+intro5: "• Overhaul of payments workflow, complete with new payments database schema and an efficient flow for tracking money transfers"
 
 skills:
 - Java, J2EE, Python
 - Spring Framework, Spring Batch
 - "Web Services: REST, SOAP"
-- "Messaging: JMS"
-- "ORM: Hibernate"
 - "Dependency Management: Maven"
 - "Version Control: Perforce, Git"
+- "Messaging: JMS"
+- "ORM: Hibernate"
 - "Testing: JUnit"
 
 experience:
@@ -37,8 +39,9 @@ experience:
   job: Technology Analyst
   city: Pune
   description:
-    - Led a team of engineers, spread globally, to design and develop a single payment hub for a leading US bank, enabling integration of multiple payment applications
-    - Developed web services with REST API, end of day settlement batch jobs using Spring Batch and consumed client services using SOAP over JMS
+    - Led a team of engineers, spread globally, to design and develop a single payment hub for BofA, enabling integration of multiple payment applications
+    - Developed web services with REST API, end of day settlement batch jobs using Spring Batch 
+    - Integration with Zelle, formerly known as ClearXchange, to enable domestic transfer between participating banks using message queues (SOAP over JMS)
     - Solved integration issues efficiently in a fast paced environment using strong interpersonal skills that resulted in better coordination amongst participating teams
     - Submitted multiple ideas with PoCs that were later integrated in product to benefit online banking users
 - employer: Infosys
@@ -47,18 +50,21 @@ experience:
   job: Sr. Systems Engineer
   city: Bangalore/Pune
   description:
-    - Guided a development team of engineers to build payment disbursement system for corporate clients
+    - Worked extensively on overhaul of Payments project in BofA
+    - Guided a development team of engineers to build payment disbursement system for corporate clients of BofA 
     - Built batch jobs using Spring Batch to automate payment processing and settlement of funds
     - Achieved zero defect development by promoting TDD, careful design of unit test cases and peer code review using Crucible
-    - Contributed an idea that led to the removal of redundant code, hence improving performance by reducing response time of the web service
+    - Contributed an idea that led to the removal of redundant code. The idea was to leverage use of stored account details of customers in newly constructed Payments DB and therefore removing calls to SPX for the same. This improved web service response time
 - employer: Infosys
   years: Aug/2011 - Jan/2014
   duration: 2 years and 6 months
   job: System Engineer
   city: Bangalore
   description:
-    - Designed and developed SOAP web services, using Spring and Axis2, enabling client to roll out next gen payment services for its customers
-    - Acquired knowledge of US Payments Domain
+    - Worked for Bank of America client
+    - Designed and developed their SOAP web services, using Spring and Axis2, enabling roll out of next gen payment services for banking customers
+    - Design and implementation of international remittance portal based on Dodd Frank regulations
+    - Acquired knowledge of US Payments Domain, especially email mobile transfers
 
 academics:
 - course: MS Computer Science
@@ -83,7 +89,7 @@ certifications:
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "Aug 22, 2022"
+  lastupdated: "07/Sep/2022"
   signed: Priyam Tyagi
 
 ---

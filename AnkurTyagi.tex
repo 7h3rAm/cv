@@ -9,6 +9,9 @@
 \usepackage{geometry}
 \geometry{$geometry$}
 
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
 % Do not indent paragraphs
 \setlength\parindent{0in}
 
@@ -74,33 +77,28 @@ $endif$
 
 {\LARGE \textbf $name$}\\[.2cm]
 
-$if(urls)$
-  \begin{multicols}{2}
-$endif$
+\begin{multicols}{2}
 
-$if(address)$
-  $for(address)$
-    $address$\\
-  $endfor$
-$endif$
+{\footnotesize \faIcon{at}} \href{mailto:$email$}{$email$}\\
+{\footnotesize \faIcon{mobile-alt}} $phone$\\
 
 \vspace{-10pt}
-$phone$\\
-\href{mailto:$email$}{$email$}\\
+{\footnotesize \faIcon{map-marker-alt}} $addressline1$\\
+{\footnotesize \textcolor{white}{\faIcon{map-marker-alt}}} $addressline2$\\
 
-$if(urls)$
-  \columnbreak
-  $for(urls)$
-    \href{https://$urls$}{$urls$}\\
-  $endfor$
-  \end{multicols}
-$endif$
+\columnbreak
+
+{\footnotesize \faIcon{linkedin}} \href{https://$linkedin$}{$linkedin$}\\
+{\footnotesize \faIcon{twitter}} \href{https://$twitter$}{$twitter$}\\
+{\footnotesize \faIcon{github}} \href{https://$github$}{$github$}\\
+{\footnotesize \faIcon{home}} \href{https://$blog$}{$blog$}\\
+\end{multicols}
 
 $intro$
 
 \section*{Experience}
 $for(experience)$
-  \textbf{$experience.job$} at \textbf{$experience.employer$} \hfill\emph{$experience.years$}\\
+  \textbf{$experience.job$} at \textbf{$experience.employer$} \hfill $experience.years$\\
   $for(experience.description)$
     • {$experience.description$}\\
   $endfor$
@@ -109,7 +107,7 @@ $endfor$
 
 \section*{Patents}
 $for(patents)$
-  \href{$patents.patent_url$}{$patents.patent_title$} \hfill\emph{$patents.patent_date$}\\
+  \href{$patents.patent_url$}{$patents.patent_title$} \hfill $patents.patent_date$\\
 $endfor$
 
 \section*{Talks}
@@ -117,26 +115,26 @@ $for(talks)$
   \textbf{$talks.name$}\\
   {$talks.brief$}\\
   $for(talks.conferences)$
-    \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill\emph{$talks.conferences.date$}\\
+    \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill $talks.conferences.date$\\
   $endfor$
   \\[.05cm]
 $endfor$
 
 \section*{Media}
 $for(media)$
-  $media.topic$, \href{$media.url$}{$media.publication$} \hfill\emph{$media.year$}\\
+  $media.topic$, \href{$media.url$}{$media.publication$} \hfill $media.year$\\
 $endfor$
 
 \section*{Academics}
 $for(academics)$
-  $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill\emph{$academics.year$}\\
-  {\footnotesize Thesis: \href{$academics.thesis_url$}{$academics.thesis$}}\\
+  $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill $academics.year$\\
+  Thesis: \href{$academics.thesis_url$}{$academics.thesis$}\\
   \\[.05cm]
 $endfor$
 
 \section*{Certifications}
 $for(certifications)$
-  \href{$certifications.url$}{$certifications.name$} \hfill\emph{$certifications.year$}\\
+  \href{$certifications.url$}{$certifications.name$} \hfill $certifications.year$\\
 $endfor$
 
 \vspace{1cm}

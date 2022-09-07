@@ -9,6 +9,9 @@
 \usepackage{geometry}
 \geometry{$geometry$}
 
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
 % Do not indent paragraphs
 \setlength\parindent{0in}
 
@@ -74,42 +77,41 @@ $endif$
 
 {\LARGE \textbf $name$}\\[.2cm]
 
-$if(urls)$
-  \begin{multicols}{2}
-$endif$
+\begin{multicols}{2}
 
-$if(address)$
-  $for(address)$
-    $address$\\
-  $endfor$
-$endif$
+{\footnotesize \faIcon{at}} \href{mailto:$email$}{$email$}\\
+{\footnotesize \faIcon{mobile-alt}} $phone$\\
 
 \vspace{-10pt}
-$phone$\\
-\href{mailto:$email$}{$email$}\\
+{\footnotesize \faIcon{map-marker-alt}} $addressline1$\\
+{\footnotesize \textcolor{white}{\faIcon{map-marker-alt}}} $addressline2$\\
 
-$if(urls)$
-  \columnbreak
-  $for(urls)$
-    \href{https://$urls$}{$urls$}\\
-  $endfor$
-  \end{multicols}
-$endif$
+\columnbreak
 
-$intro$
+{\footnotesize \faIcon{linkedin}} \href{https://$linkedin$}{$linkedin$}\\
+{\footnotesize \faIcon{twitter}} \href{https://$twitter$}{$twitter$}\\
+{\footnotesize \faIcon{github}} \href{https://$github$}{$github$}\\
+\end{multicols}
+
+$intro1$\\
+\\
+$intro2$\\
+$intro3$\\
+$intro4$\\
+$intro5$\\
 
 $if(skills)$
   \subsection*{Skills}
-  \begin{itemize}
+  \begin{multicols}{2}
     $for(skills)$
-      \item $skills$
+      • $skills$\\
     $endfor$
-  \end{itemize}
+  \end{multicols}
 $endif$
 
 \section*{Experience}
 $for(experience)$
-  \textbf{$experience.job$} at \textbf{$experience.employer$} \hfill\emph{$experience.years$}\\
+  \textbf{$experience.job$} at \textbf{$experience.employer$} \hfill $experience.years$\\
   $for(experience.description)$
     • {$experience.description$}\\
   $endfor$
@@ -118,14 +120,15 @@ $endfor$
 
 \section*{Academics}
 $for(academics)$
-  $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill\emph{$academics.year$}\\
+  $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill $academics.year$\\
 $endfor$
 
 \section*{Certifications}
 $for(certifications)$
-  \href{$certifications.url$}{$certifications.name$} \hfill\emph{$certifications.year$}\\
+  \href{$certifications.url$}{$certifications.name$} \hfill $certifications.year$\\
 $endfor$
 
+\vspace{1cm}
 $for(trailer)$
   %{$trailer.note$}\\
   Last updated: $trailer.lastupdated$\\
