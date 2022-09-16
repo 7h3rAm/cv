@@ -233,10 +233,6 @@ certifications:
   institute: SANS
   year: Mar/2012
   url: https://www.giac.org/certifications/penetration-tester-gpen/
-- name: Certified Ethical Hacker (CEH)
-  institute: EC-Council
-  year: May/2011
-  url: https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/
 - name: Cisco Certified Network Security Associate (CCNA)
   institute: Cisco
   url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html
@@ -271,7 +267,7 @@ courses:
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "07/Sep/2022"
+  lastupdated: "09/Sep/2022"
   signed: Ankur Tyagi
 
 ---
