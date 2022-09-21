@@ -107,7 +107,7 @@ $endfor$
 
 \section*{Patents}
 $for(patents)$
-  \href{$patents.patent_url$}{$patents.patent_title$} \hfill $patents.patent_date$\\
+  • \href{$patents.patent_url$}{$patents.patent_title$} \hfill $patents.patent_date$\\
 $endfor$
 
 \section*{Talks}
@@ -115,26 +115,26 @@ $for(talks)$
   \textbf{$talks.name$}\\
   {$talks.brief$}\\
   $for(talks.conferences)$
-    \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill $talks.conferences.date$\\
+    • \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill $talks.conferences.date$\\
   $endfor$
   \\[.05cm]
 $endfor$
 
 \section*{Media}
 $for(media)$
-  $media.topic$, \href{$media.url$}{$media.publication$} \hfill $media.year$\\
+  • $media.topic$, \href{$media.url$}{$media.publication$} \hfill $media.year$\\
 $endfor$
 
 \section*{Academics}
 $for(academics)$
-  $academics.course$, \href{$academics.url$}{$academics.institute$} \hfill $academics.year$\\
+  \textbf{$academics.course$}, \textbf{\href{$academics.url$}{$academics.institute$}} \hfill $academics.year$\\
   Thesis: \href{$academics.thesis_url$}{$academics.thesis$}\\
   \\[.05cm]
 $endfor$
 
 \section*{Certifications}
 $for(certifications)$
-  \href{$certifications.url$}{$certifications.name$} \hfill $certifications.year$\\
+  • \href{$certifications.url$}{$certifications.name$} \hfill $certifications.year$\\
 $endfor$
 
 \vspace{1cm}

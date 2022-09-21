@@ -12,7 +12,7 @@ email: ankurt.20@gmail.com
 addressline1: 807 Catamaran St, Apt. 2
 addressline2: Foster City, CA 94404
 
-linkedin: in.linkedin.com/in/ankurstyagi
+linkedin: linkedin.com/in/ankurstyagi
 twitter: twitter.com/7h3rAm
 github: github.com/7h3rAm
 blog: 7h3rAm.github.io
@@ -78,6 +78,14 @@ experience:
 
 patents_portfolio_url: "https://patents.google.com/?q=ankur+tyagi&assignee=Juniper+Networks%2CQualys"
 patents:
+- patent_title: Quantification of Adversary TTPs Using Threat Attribute Groupings and Correlation
+  patent_id: US17/525773
+  patent_url: 
+  patent_date: Dec/2021
+- patent_title: Security Event Detection Using Behavioral, Analytical and Threat Intelligence Attributes
+  patent_id: US17/564293
+  patent_url: 
+  patent_date: Dec/2021
 - patent_title: Attack Path and Graph Creation Based on User and System Profiling
   patent_id: US20210021629A1
   patent_url: https://patents.google.com/patent/US20210021629A1/
@@ -267,7 +275,7 @@ courses:
 
 trailer:
 - note: "Additional details available upon request."
-  lastupdated: "09/Sep/2022"
+  lastupdated: "20/Sep/2022"
   signed: Ankur Tyagi
 
 ---
