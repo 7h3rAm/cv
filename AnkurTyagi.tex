@@ -11,7 +11,7 @@
 
 \usepackage{fontspec}
 \usepackage{fontawesome5}
-\usepackage[dvipsnames]{xcolor}
+\usepackage[dvipsnames]{xcolor} %https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
 
 % Do not indent paragraphs
 \setlength\parindent{0in}
@@ -33,6 +33,7 @@ $endif$
 
 % TYPOGRAPHY
 %--------------------------------
+\usepackage{enumitem}
 \usepackage{libertine}
 \usepackage{fontspec}
 \usepackage{xunicode}
@@ -40,14 +41,6 @@ $endif$
 \usepackage[none]{hyphenat}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
-
-% MARGIN NOTES
-%--------------------------------
-\usepackage{marginnote}
-\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
-\renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{7pt}
-\reversemarginpar
 
 % HEADINGS
 %--------------------------------
@@ -76,51 +69,54 @@ $endif$
 %--------------------------------
 \begin{document}
 
-\textcolor{Maroon}{\LARGE \textbf{$name$}}\\[.2cm]
-
-\begin{multicols}{2}
-
-\textcolor{darkgray}{\faIcon{at}} \href{mailto:$email$}{$email$}\\
-\textcolor{darkgray}{\faIcon{mobile-alt}} $phone$\\
-\textcolor{darkgray}{\faIcon{map-marker-alt}} $addressline1$\\
-\textcolor{white}{\faIcon{map-marker-alt}} $addressline2$\\
-
-\columnbreak
-
-$for(social)$
-  \textcolor{darkgray}{\faIcon{$social.faicontext$}} \href{$social.url$}{$social.text$}\\
-$endfor$
-\end{multicols}
-
+\textcolor{Maroon}{\LARGE \textbf{$name$}}\\[.3cm]
+\textcolor{darkgray}{\faIcon{at}} \href{mailto:$email$}{$email$} • \textcolor{darkgray}{\faIcon{$linkedin.faicontext$}} \href{$linkedin.url$}{$linkedin.text$} • \textcolor{darkgray}{\faIcon{$twitter.faicontext$}} \href{$twitter.url$}{$twitter.text$} • \textcolor{darkgray}{\faIcon{$blog.faicontext$}} \href{$blog.url$}{$blog.text$}\\[.3cm]
 $intro$
 
 \section*{\textcolor{Maroon}{Experience}}
 $for(experience)$
-  \textcolor{darkgray}{\textbf{$experience.job$} at \textbf{$experience.employer$}} \hfill $experience.years$\\
-  $for(experience.description)$
-    • {$experience.description$}\\
-  $endfor$
-  \\[.05cm]
+  \begin{enumerate}
+    [topsep=10pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+    \item{\textcolor{darkgray}{\textbf{$experience.job$} at \textbf{$experience.employer$}} \hfill $experience.years$}
+    $for(experience.description)$
+    \begin{enumerate}
+      [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+      \item{$experience.description$}
+    \end{enumerate}
+    $endfor$
+  \end{enumerate}
 $endfor$
 
 \section*{\textcolor{Maroon}{Patents}}
 $for(patents)$
-  • \href{$patents.patent_url$}{$patents.patent_title$} \hfill $patents.patent_date$\\
-$endfor$
-
-\section*{\textcolor{Maroon}{Talks}}
-$for(talks)$
-  \textcolor{darkgray}{\textbf{$talks.name$}}\\
-  {$talks.brief$}\\
-  $for(talks.conferences)$
-    • \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill $talks.conferences.date$\\
-  $endfor$
-  \\[.05cm]
+  \begin{enumerate}
+    [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+    \item{\href{$patents.patent_url$}{$patents.patent_title$} \hfill $patents.patent_date$}
+  \end{enumerate}
 $endfor$
 
 \section*{\textcolor{Maroon}{Media}}
 $for(media)$
-  • $media.topic$, \href{$media.url$}{$media.publication$} \hfill $media.year$\\
+  \begin{enumerate}
+    [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+    \item{$media.topic$, \href{$media.url$}{$media.publication$} \hfill $media.year$}
+  \end{enumerate}
+$endfor$
+
+\section*{\textcolor{Maroon}{Talks}}
+$for(talks)$
+
+  \begin{enumerate}
+    [topsep=10pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+    \item{\textcolor{darkgray}{\textbf{$talks.name$}}\\$talks.brief$}
+    $for(talks.conferences)$
+    \begin{enumerate}
+      [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+      \item{\href{$talks.conferences.url$}{$talks.conferences.name$} \hfill $talks.conferences.date$}
+    \end{enumerate}
+    $endfor$
+  \end{enumerate}
+
 $endfor$
 
 \section*{\textcolor{Maroon}{Portfolio}}
@@ -143,19 +139,22 @@ $endfor$
   $endfor$
 \end{multicols}
 
-\section*{\textcolor{Maroon}{Academics}}
-$for(academics)$
-  \textcolor{darkgray}{\textbf{$academics.course$}}, \textbf{\href{$academics.url$}{$academics.institute$}} \hfill $academics.year$\\
-  Thesis: \href{$academics.thesis_url$}{$academics.thesis$}\\
-  \\[.05cm]
-$endfor$
-
-\section*{\textcolor{Maroon}{Certifications}}
+\section*{\textcolor{Maroon}{Certifications/Academics}}
 $for(certifications)$
-  • \href{$certifications.url$}{$certifications.name$} \hfill $certifications.year$\\
+  \begin{enumerate}
+    [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+    \item{\href{$certifications.url$}{$certifications.name$} \hfill $certifications.year$}
+  \end{enumerate}
+$endfor$
+\vspace{0.3cm}
+$for(academics)$
+  \begin{enumerate}
+    [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+    \item{\textcolor{darkgray}{\textbf{$academics.course$}}, \textbf{\href{$academics.url$}{$academics.institute$}} \hfill $academics.year$\\Thesis: \href{$academics.thesis_url$}{$academics.thesis$}}
+  \end{enumerate}
 $endfor$
 
-\vspace{1cm}
+\vspace*{\fill}
 $for(trailer)$
   %{$trailer.note$}\\
   \footnotesize{\textcolor{darkgray}{Last updated: $trailer.lastupdated$}}\\

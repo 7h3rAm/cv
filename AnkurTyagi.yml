@@ -3,7 +3,7 @@ title: AnkurTyagi-CV
 mainfont: Hoefler Text
 fontsize: 9pt
 lang: en-US
-geometry: a4paper, left=2.7cm, right=2.7cm, top=2cm, bottom=2.7cm
+geometry: a4paper, left=2.1cm, right=2.1cm, top=2.1cm, bottom=2.1cm
 pdfsubject: aHR0cHM6Ly83aDNyYW0uZ2l0aHViLmlvL3BhZ2VzL2N2Lmh0bWw=
 name: Ankur Tyagi
 phone: +1 650-542-1134
@@ -16,16 +16,18 @@ trailer:
     lastupdated: "18/Nov/2022"
     signed: Ankur Tyagi
 
-social:
-  - text: linkedin.com/in/ankurstyagi
-    faicontext: linkedin
-    url: https://linkedin.com/in/ankurstyagi
-  - text: twitter.com/7h3rAm
-    faicontext: twitter
-    url: https://twitter.com/7h3rAm
-  - text: 7h3rAm.github.io
-    faicontext: home
-    url: https://7h3rAm.github.io
+linkedin:
+  text: linkedin.com/in/ankurstyagi
+  faicontext: linkedin
+  url: https://linkedin.com/in/ankurstyagi
+twitter:
+  text: twitter.com/7h3rAm
+  faicontext: twitter
+  url: https://twitter.com/7h3rAm
+blog:
+  text: 7h3rAm.github.io
+  faicontext: home
+  url: https://7h3rAm.github.io
 
 intro: "I'm an infosec enthusiast with a strong background in network security (IDS/IPS), anti-malware technologies (EDR/XDR), research methodologies and innovation."
 
@@ -47,35 +49,24 @@ experience:
     - "Subject Matter Expert for research/innovation and multiple automation worflows"
     - "Technologies: Python, Shell, Unix, Windows, AntiMalware, EDR, XDR, Threat Intelligence"
 - employer: Qualys Inc.
-  years: Jan/2017 - Jan/2019
-  duration: 2 years and 1 month
-  job: Sr. Malware Research Engineer
-  city: Foster City
+  years: Apr/2015 - Jan/2019
+  duration: 3 years and 9 months
+  job: Research Engineer
+  city: Pune, Foster City
   description:
-    - "Research towards automated aggregation of threat behavior, filed for US patent and implemented as part of a customer facing product"
-    - "Worked with various teams as a Subject Matter Expert for AntiMalware and network security research initiatives"
-    - "Worked on multiple research ideas that could be leveraged as Intellectual Property"
-    - "First responder for detection of active malware campaigns"
-    - "Technologies: Python, Shell, Unix, Windows, AntiMalware, IoC"
-- employer: Qualys Inc.
-  years: Apr/2015 - Jan/2017
-  duration: 1 year and 10 months
-  job: Malware Research Engineer
-  city: Pune
-  description:
-    - "Research towards automated (Yara/IoC) rule creation for generic threat coverage"
-    - "Automated sourcing, filtering and scanning of malware samples"
-    - "Worked on various in-house automation and development projects"
-    - "Technologies: Python, Shell, Unix, Windows, Yara, IoC"
+    - "Research towards automated aggregation of threat behavior and generic (Yara/IoC) rule creation"
+    - "Lead for multiple in-house automation projects (sourcing/filtering/scanning of malware samples)"
+    - "Subject Matter Expert for AntiMalware and network security research initiatives"
+    - "Technologies: Python, Shell, Unix, Windows, AntiMalware, Yara, IoC"
 - employer: Juniper Networks
   duration: 2 years and 11 months
   years: Apr/2012 - Feb/2015
   job: Security Research Engineer
   city: Bangalore
   description:
-    - "Testing and updating in-house automation tools that help with coverage analysis against various exploitation frameworks"
-    - "Ensured coverage against latest vulnerabilities and exploits through signature development for Juniper's security portfolio devices"
-    - "Regular updates of active signatures to ensure coverage against evolving IDS/IPS evasion techniques as well as for quality assurance"
+    - "Maintaining in-house automation tools for coverage against multiple exploitation frameworks"
+    - "Signature development for Juniper's security portfolio devices against latest vulnerabilities and exploits"
+    - "Regular updates of active signatures to increase accuracy and coverage against evolving evasion techniques"
     - "Technologies: Python, Shell, Unix, Windows, IDS, IPS"
 - employer: SecurView Systems
   duration: 1 year and 5 months
@@ -84,7 +75,7 @@ experience:
   city: Pune
   description:
     - "Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
-    - "Active member of the Secur-I Research Group with monthly publication of critical vulnerability assessments and concentrated vulnerability research"
+    - "Active member of the Secur-I Research Group with monthly publication of critical vulnerability assessments"
     - "Technologies: Python, Shell, Unix, Windows, Vulnerability Research"
 
 patents_portfolio_url: "https://patents.google.com/?q=ankur+tyagi&assignee=Juniper+Networks%2CQualys"
@@ -224,17 +215,6 @@ portfoliogs:
     - "h-index: 3"
     - "i10-index: 2"
 
-portfolioso:
-  name: StackOverflow
-  faicontext: stack-overflow
-  url: https://stackoverflow.com/users/1079836/7h3ram
-  metrics:
-    - "Reputation: 1685 (top 22%)"
-    - "Impact: ~481k people reached"
-    - "Gold: 2"
-    - "Silver: 15"
-    - "Bronze: 17"
-
 portfoliogh:
   name: GitHub
   faicontext: github
@@ -242,17 +222,23 @@ portfoliogh:
   metrics:
     - "Rank: S (top 25%)"
     - "Commits: 16.2k"
-    - "Contributions: 11"
+    #- "Contributions: 11"
     - "Followers: 142"
     - "Pull Requests: 16"
-    - "Repositories: 24"
+    #- "Repositories: 24"
     - "Stars: 315"
     - "Languages: python/c/assembly/shell/tex"
 
+portfolioso:
+  name: StackOverflow
+  faicontext: stack-overflow
+  url: https://stackoverflow.com/users/1079836/7h3ram
+  metrics:
+    - "Reputation: 1685 (top 22%)"
+    - "Impact: ~481k people reached"
+    - "Badges: gold:2/silver:15/bronze:17"
+
 media:
-  - topic: CTF Participations
-    publication: 
-    year: 
   - topic: Bossie Awards 2017 - The best networking and security software
     publication: InfoWorld
     year: Sep/2017
