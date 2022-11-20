@@ -11,6 +11,7 @@
 
 \usepackage{fontspec}
 \usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
 
 % Do not indent paragraphs
 \setlength\parindent{0in}
@@ -66,53 +67,50 @@ $endif$
   pdfauthor={$name$},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
-  urlcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  citecolor=[rgb]{0.117,0.682,0.858}
+  urlcolor=MidnightBlue,
+  linkcolor=CornflowerBlue,
+  citecolor=WildStrawberry
 }
 
 % DOCUMENT
 %--------------------------------
 \begin{document}
 
-{\LARGE \textbf $name$}\\[.2cm]
+\textcolor{Maroon}{\LARGE \textbf{$name$}}\\[.2cm]
 
 \begin{multicols}{2}
 
-{\footnotesize \faIcon{at}} \href{mailto:$email$}{$email$}\\
-{\footnotesize \faIcon{mobile-alt}} $phone$\\
-
-\vspace{-10pt}
-{\footnotesize \faIcon{map-marker-alt}} $addressline1$\\
-{\footnotesize \textcolor{white}{\faIcon{map-marker-alt}}} $addressline2$\\
+\textcolor{darkgray}{\faIcon{at}} \href{mailto:$email$}{$email$}\\
+\textcolor{darkgray}{\faIcon{mobile-alt}} $phone$\\
+\textcolor{darkgray}{\faIcon{map-marker-alt}} $addressline1$\\
+\textcolor{white}{\faIcon{map-marker-alt}} $addressline2$\\
 
 \columnbreak
 
-{\footnotesize \faIcon{linkedin}} \href{https://$linkedin$}{$linkedin$}\\
-{\footnotesize \faIcon{twitter}} \href{https://$twitter$}{$twitter$}\\
-{\footnotesize \faIcon{github}} \href{https://$github$}{$github$}\\
-{\footnotesize \faIcon{home}} \href{https://$blog$}{$blog$}\\
+$for(social)$
+  \textcolor{darkgray}{\faIcon{$social.faicontext$}} \href{$social.url$}{$social.text$}\\
+$endfor$
 \end{multicols}
 
 $intro$
 
-\section*{Experience}
+\section*{\textcolor{Maroon}{Experience}}
 $for(experience)$
-  \textbf{$experience.job$} at \textbf{$experience.employer$} \hfill $experience.years$\\
+  \textcolor{darkgray}{\textbf{$experience.job$} at \textbf{$experience.employer$}} \hfill $experience.years$\\
   $for(experience.description)$
     • {$experience.description$}\\
   $endfor$
   \\[.05cm]
 $endfor$
 
-\section*{Patents}
+\section*{\textcolor{Maroon}{Patents}}
 $for(patents)$
   • \href{$patents.patent_url$}{$patents.patent_title$} \hfill $patents.patent_date$\\
 $endfor$
 
-\section*{Talks}
+\section*{\textcolor{Maroon}{Talks}}
 $for(talks)$
-  \textbf{$talks.name$}\\
+  \textcolor{darkgray}{\textbf{$talks.name$}}\\
   {$talks.brief$}\\
   $for(talks.conferences)$
     • \href{$talks.conferences.url$}{$talks.conferences.name$} \hfill $talks.conferences.date$\\
@@ -120,19 +118,39 @@ $for(talks)$
   \\[.05cm]
 $endfor$
 
-\section*{Media}
+\section*{\textcolor{Maroon}{Media}}
 $for(media)$
   • $media.topic$, \href{$media.url$}{$media.publication$} \hfill $media.year$\\
 $endfor$
 
-\section*{Academics}
+\section*{\textcolor{Maroon}{Portfolio}}
+\begin{multicols}{3}
+  \textcolor{darkgray}{\faIcon{$portfoliogs.faicontext$}} \href{$portfoliogs.url$}{$portfoliogs.name$}\\
+  $for(portfoliogs.metrics)$
+    • $portfoliogs.metrics$\\
+  $endfor$
+
+\columnbreak
+  \textcolor{darkgray}{\faIcon{$portfoliogh.faicontext$}} \href{$portfoliogh.url$}{$portfoliogh.name$}\\
+  $for(portfoliogh.metrics)$
+    • $portfoliogh.metrics$\\
+  $endfor$
+
+\columnbreak
+  \textcolor{darkgray}{\faIcon{$portfolioso.faicontext$}} \href{$portfolioso.url$}{$portfolioso.name$}\\
+  $for(portfolioso.metrics)$
+    • $portfolioso.metrics$\\
+  $endfor$
+\end{multicols}
+
+\section*{\textcolor{Maroon}{Academics}}
 $for(academics)$
-  \textbf{$academics.course$}, \textbf{\href{$academics.url$}{$academics.institute$}} \hfill $academics.year$\\
+  \textcolor{darkgray}{\textbf{$academics.course$}}, \textbf{\href{$academics.url$}{$academics.institute$}} \hfill $academics.year$\\
   Thesis: \href{$academics.thesis_url$}{$academics.thesis$}\\
   \\[.05cm]
 $endfor$
 
-\section*{Certifications}
+\section*{\textcolor{Maroon}{Certifications}}
 $for(certifications)$
   • \href{$certifications.url$}{$certifications.name$} \hfill $certifications.year$\\
 $endfor$
@@ -140,8 +158,8 @@ $endfor$
 \vspace{1cm}
 $for(trailer)$
   %{$trailer.note$}\\
-  Last updated: $trailer.lastupdated$\\
-  %\textbf{$trailer.signed$}
+  \footnotesize{\textcolor{darkgray}{Last updated: $trailer.lastupdated$}}\\
+  %\textcolor{darkgray}{\textbf{$trailer.signed$}}
 $endfor$
 
 \end{document}

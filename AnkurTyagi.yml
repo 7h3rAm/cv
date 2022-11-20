@@ -4,20 +4,28 @@ mainfont: Hoefler Text
 fontsize: 9pt
 lang: en-US
 geometry: a4paper, left=2.7cm, right=2.7cm, top=2cm, bottom=2.7cm
-
 pdfsubject: aHR0cHM6Ly83aDNyYW0uZ2l0aHViLmlvL3BhZ2VzL2N2Lmh0bWw=
-
 name: Ankur Tyagi
 phone: +1 650-542-1134
 email: ankurt.20@gmail.com
-
-addressline1: 807 Catamaran St, Apt. 2
+addressline1: 807 Catamaran St, Apt 2
 addressline2: Foster City, CA 94404
 
-linkedin: linkedin.com/in/ankurstyagi
-twitter: twitter.com/7h3rAm
-github: github.com/7h3rAm
-blog: 7h3rAm.github.io
+trailer:
+  - note: "Additional details available upon request."
+    lastupdated: "18/Nov/2022"
+    signed: Ankur Tyagi
+
+social:
+  - text: linkedin.com/in/ankurstyagi
+    faicontext: linkedin
+    url: https://linkedin.com/in/ankurstyagi
+  - text: twitter.com/7h3rAm
+    faicontext: twitter
+    url: https://twitter.com/7h3rAm
+  - text: 7h3rAm.github.io
+    faicontext: home
+    url: https://7h3rAm.github.io
 
 intro: "I'm an infosec enthusiast with a strong background in network security (IDS/IPS), anti-malware technologies (EDR/XDR), research methodologies and innovation."
 
@@ -37,6 +45,7 @@ experience:
     - "Research and automation: Threat Intelligence feeds evaluation and aggregation, False Positive validation, event whitelisting, risk scoring, rule parsers and converters"
     - "MITRE ATT&CK TTP correlation (adversary killchain), quantification and scoring"
     - "Subject Matter Expert for research/innovation and multiple automation worflows"
+    - "Technologies: Python, Shell, Unix, Windows, AntiMalware, EDR, XDR, Threat Intelligence"
 - employer: Qualys Inc.
   years: Jan/2017 - Jan/2019
   duration: 2 years and 1 month
@@ -46,18 +55,18 @@ experience:
     - "Research towards automated aggregation of threat behavior, filed for US patent and implemented as part of a customer facing product"
     - "Worked with various teams as a Subject Matter Expert for AntiMalware and network security research initiatives"
     - "Worked on multiple research ideas that could be leveraged as Intellectual Property"
-    - "First responder to provide detection against active malware campaigns"
+    - "First responder for detection of active malware campaigns"
+    - "Technologies: Python, Shell, Unix, Windows, AntiMalware, IoC"
 - employer: Qualys Inc.
   years: Apr/2015 - Jan/2017
   duration: 1 year and 10 months
   job: Malware Research Engineer
   city: Pune
   description:
-    - "Research automated (Yara/IoC) rule creation for generic threat coverage"
+    - "Research towards automated (Yara/IoC) rule creation for generic threat coverage"
     - "Automated sourcing, filtering and scanning of malware samples"
-    - "Reverse engineering and analysis of malware samples"
     - "Worked on various in-house automation and development projects"
-    - "Technologies: Python, Shell, Unix, Windows, AntiMalware, EDR"
+    - "Technologies: Python, Shell, Unix, Windows, Yara, IoC"
 - employer: Juniper Networks
   duration: 2 years and 11 months
   years: Apr/2012 - Feb/2015
@@ -76,7 +85,7 @@ experience:
   description:
     - "Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
     - "Active member of the Secur-I Research Group with monthly publication of critical vulnerability assessments and concentrated vulnerability research"
-    - "Technologies: Python, Shell, Unix, Windows"
+    - "Technologies: Python, Shell, Unix, Windows, Vulnerability Research"
 
 patents_portfolio_url: "https://patents.google.com/?q=ankur+tyagi&assignee=Juniper+Networks%2CQualys"
 patents:
@@ -136,6 +145,14 @@ talks:
     - name: DEF CON 30 Demo Labs
       date: 13/Aug/2022
       url: https://forum.defcon.org/node/242258
+- name: Breach and Attack Simulation
+  brief: Automated simulation of adversary TTPs mapped to MITRE ATT&CK framework
+  description: 
+  conferences:
+    - name: Qualys Security Conference 2018 - First Look Showcase
+      date: 14/Nov/2018
+      url: https://www.qualys.com/qsc/2018/las-vegas/
+      urlvimeo: https://vimeo.com/301686528
 - name: Angad - Malware Detection using Multi-Dimensional Visualization
   brief: Angad is a tool that can perform visual malware clustering using Hilbert Curves
   description: Angad is a framework to automate classification of an unlabelled malware dataset using multi-dimensional modelling. The input dataset is analyzed to collect various attributes which are then arranged in a number of feature vectors. These vectors are then individually visualized, indexed and then queried for each new input file. Matching vectors are labelled as per their AV detection categories (could be changed to a heuristics approach if needed). If dynamic behavior or network traffic details are available, respective vectors are converted into activity graphs that depict evolution on a predefined time scale. This results into an animation of a malware or a malware category's behaviorial traits and is useful in identifying activity overlaps across the input dataset.
@@ -198,86 +215,118 @@ talks:
       date: 14/Feb/2014
       url: https://nullcon.net/website/goa-14/speakers/ankur-tyagi.php
 
+portfoliogs:
+  name: Google Scholar
+  faicontext: graduation-cap
+  url: https://scholar.google.com/citations?hl=en&user=fukhpJ0AAAAJ
+  metrics:
+    - "citations: 38"
+    - "h-index: 3"
+    - "i10-index: 2"
+
+portfolioso:
+  name: StackOverflow
+  faicontext: stack-overflow
+  url: https://stackoverflow.com/users/1079836/7h3ram
+  metrics:
+    - "Reputation: 1685 (top 22%)"
+    - "Impact: ~481k people reached"
+    - "Gold: 2"
+    - "Silver: 15"
+    - "Bronze: 17"
+
+portfoliogh:
+  name: GitHub
+  faicontext: github
+  url: https://github.com/7h3rAm
+  metrics:
+    - "Rank: S (top 25%)"
+    - "Commits: 16.2k"
+    - "Contributions: 11"
+    - "Followers: 142"
+    - "Pull Requests: 16"
+    - "Repositories: 24"
+    - "Stars: 315"
+    - "Languages: python/c/assembly/shell/tex"
+
 media:
-- topic: Bossie Awards 2017 - The best networking and security software
-  publication: InfoWorld
-  year: Sep/2017
-  url: https://www.infoworld.com/article/3227605/security/bossie-awards-2017-the-best-networking-and-security-software.html#slide12
-- topic: Visual network and file forensics with Rudra
-  publication: HelpNet Security
-  year: Sep/2017
-  url: https://www.helpnetsecurity.com/2017/09/12/rudra-file-forensics/
-- topic: Rudra - Framework for inspection of network capture files
-  publication: HelpNet Security
-  year: Sep/2015
-  url: https://www.helpnetsecurity.com/2015/09/04/rudra-framework-for-automated-inspection-of-network-capture-files/
-- topic: Network Sorcery with ChopShop and Libemu
-  publication: PenTest Magazine
-  year: Mar/2014
-  url: https://pentestmag.com/
+  - topic: CTF Participations
+    publication: 
+    year: 
+  - topic: Bossie Awards 2017 - The best networking and security software
+    publication: InfoWorld
+    year: Sep/2017
+    url: https://www.infoworld.com/article/3227605/security/bossie-awards-2017-the-best-networking-and-security-software.html#slide12
+  - topic: Visual network and file forensics with Rudra
+    publication: HelpNet Security
+    year: Sep/2017
+    url: https://www.helpnetsecurity.com/2017/09/12/rudra-file-forensics/
+  - topic: Rudra - Framework for inspection of network capture files
+    publication: HelpNet Security
+    year: Sep/2015
+    url: https://www.helpnetsecurity.com/2015/09/04/rudra-framework-for-automated-inspection-of-network-capture-files/
+  - topic: Network Sorcery with ChopShop and Libemu
+    publication: PenTest Magazine
+    year: Mar/2014
+    url: https://pentestmag.com/
 
 academics:
-- course: M.Tech Software Systems
-  institute: BITS-Pilani
-  url: https://bits-pilani-wilp.ac.in/
-  year: Dec/2014
-  thesis: Rudra - Framework for Automated Inspection of Network Flows
-  thesis_url: https://github.com/7h3rAm/rudra
-  score: 6.65
-  grade: Excellent
-- course: BE Information Technology
-  institute: Pune University
-  url: http://www.unipune.ac.in/
-  year: Jul/2010
-  thesis: Insider Threats - Research on ARP Security Flaws and Solutions
-  thesis_url: https://github.com/7h3rAm/arp-secur
-  score: 6.58
-  grade: First Class
+  - course: M.Tech Software Systems
+    institute: BITS-Pilani
+    url: https://bits-pilani-wilp.ac.in/
+    year: Dec/2014
+    thesis: Rudra - Framework for Automated Inspection of Network Flows
+    thesis_url: https://github.com/7h3rAm/rudra
+    score: 6.65
+    grade: Excellent
+  - course: BE Information Technology
+    institute: Pune University
+    url: http://www.unipune.ac.in/
+    year: Jul/2010
+    thesis: Insider Threats - Research on ARP Security Flaws and Solutions
+    thesis_url: https://github.com/7h3rAm/arp-secur
+    score: 6.58
+    grade: First Class
 
 certifications:
-- name: Amateur Radio Operator (KN6VLB)
-  institute: Federal Communications Commission
-  year: Aug/2022
-  url: https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=4651053
-- name: GIAC Penetration Tester (GPEN)
-  institute: SANS
-  year: Mar/2012
-  url: https://www.giac.org/certifications/penetration-tester-gpen/
-- name: Cisco Certified Network Security Associate (CCNA)
-  institute: Cisco
-  url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html
-  year: Jan/2010
+  - name: Amateur Radio Operator (KN6VLB)
+    institute: Federal Communications Commission
+    year: Aug/2022
+    url: https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=4651053
+  - name: GIAC Penetration Tester (GPEN)
+    institute: SANS
+    year: Mar/2012
+    url: https://www.giac.org/certifications/penetration-tester-gpen/
+  - name: Cisco Certified Network Security Associate (CCNA)
+    institute: Cisco
+    url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html
+    year: Jan/2010
 
 courses:
-- name: The Arduino Platform and C Programming
-  institute: Coursera - University of California, Irvine
-  year: Dec/2015
-  score: 97.5%
-  grade: First Class
-- name: Software Security
-  institute: Coursera - University of Maryland
-  year: Dec/2015
-  score: 92.3%
-  grade: Distinction
-- name: An Introduction to Interactive Programming in Python
-  institute: Coursera - Rice University
-  year: Jan/2014
-  score: 90.8%
-  grade: Distinction
-- name: Internet History, Technology and Security
-  institute: Coursera - University of Michigan
-  year: Dec/2013
-  score: 94.6%
-  grade: Distinction
-- name: Malicious Software and its Underground Economy
-  institute: Coursera - University of London
-  year: Sep/2013
-  score: 100%
-  grade: Distinction
-
-trailer:
-- note: "Additional details available upon request."
-  lastupdated: "20/Sep/2022"
-  signed: Ankur Tyagi
+  - name: The Arduino Platform and C Programming
+    institute: Coursera - University of California, Irvine
+    year: Dec/2015
+    score: 97.5%
+    grade: First Class
+  - name: Software Security
+    institute: Coursera - University of Maryland
+    year: Dec/2015
+    score: 92.3%
+    grade: Distinction
+  - name: An Introduction to Interactive Programming in Python
+    institute: Coursera - Rice University
+    year: Jan/2014
+    score: 90.8%
+    grade: Distinction
+  - name: Internet History, Technology and Security
+    institute: Coursera - University of Michigan
+    year: Dec/2013
+    score: 94.6%
+    grade: Distinction
+  - name: Malicious Software and its Underground Economy
+    institute: Coursera - University of London
+    year: Sep/2013
+    score: 100%
+    grade: Distinction
 
 ---
