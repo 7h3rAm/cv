@@ -13,7 +13,7 @@ addressline2: Foster City, CA 94404
 
 trailer:
   - note: "Additional details available upon request."
-    lastupdated: "09/Jan/2023"
+    lastupdated: "28/Feb/2023"
     signed: Ankur Tyagi
 
 linkedin:
@@ -142,8 +142,8 @@ talks:
   conferences:
     - name: Qualys Security Conference 2018 - First Look Showcase
       date: 14/Nov/2018
-      url: https://www.qualys.com/qsc/2018/las-vegas/
-      urlvimeo: https://vimeo.com/301686528
+      url: https://vimeo.com/301686528#t=27m12s
+      url1: https://www.qualys.com/qsc/2018/las-vegas/
 - name: Angad - Malware Detection using Multi-Dimensional Visualization
   brief: Angad is a tool that can perform visual malware clustering using Hilbert Curves
   description: Angad is a framework to automate classification of an unlabelled malware dataset using multi-dimensional modelling. The input dataset is analyzed to collect various attributes which are then arranged in a number of feature vectors. These vectors are then individually visualized, indexed and then queried for each new input file. Matching vectors are labelled as per their AV detection categories (could be changed to a heuristics approach if needed). If dynamic behavior or network traffic details are available, respective vectors are converted into activity graphs that depict evolution on a predefined time scale. This results into an animation of a malware or a malware category's behaviorial traits and is useful in identifying activity overlaps across the input dataset.
@@ -153,10 +153,10 @@ talks:
       url: https://sector.ca/sessions/angad-a-malware-detection-framework-using-multi-dimensional-visualization/
     - name: BSides Zurich 2018
       date: 14/Sep/2018
-      url: https://bsideszh.ch/agenda/abstracts/
+      url: https://bsideszh.ch/archive/welcome-2018/agenda/abstracts/
     - name: GrrCON 2018
       date: 07/Sep/2018
-      url: http://grrcon.com/presentations/
+      url: https://www.youtube.com/watch?v=0lkthFbPOkM&list=PLNhlcxQZJSm-NpvmmiV5J2hwlV7hrQfg-&index=10
     - name: DEF CON 26 Demo Labs
       date: 11/Aug/2018
       url: https://www.defcon.org/html/defcon-26/dc-26-demolabs.html#Angad
@@ -204,14 +204,15 @@ talks:
       url: https://www.blackhat.com/us-14/arsenal.html#Tyagi
     - name: Nullcon 2014
       date: 14/Feb/2014
-      url: https://nullcon.net/website/goa-14/speakers/ankur-tyagi.php
+      url: https://archive.nullcon.net/website/archives/goa-2014.php
+      urlvideo: https://www.youtube.com/watch?v=E4YptOJzVXQ
 
 portfoliogs:
   name: Google Scholar
   faicontext: graduation-cap
   url: https://scholar.google.com/citations?hl=en&user=fukhpJ0AAAAJ
   metrics:
-    - "citations: 41"
+    - "citations: 43"
     - "h-index: 3"
     - "i10-index: 2"
 
@@ -221,12 +222,12 @@ portfoliogh:
   url: https://github.com/7h3rAm
   metrics:
     - "Rank: S (top 25%)"
-    - "Commits: 16.2k"
+    - "Commits: 16.4k"
     #- "Contributions: 11"
     - "Followers: 142"
     - "Pull Requests: 16"
     #- "Repositories: 24"
-    - "Stars: 315"
+    - "Stars: 328"
     - "Languages: python/c/assembly/shell/tex"
 
 portfolioso:
@@ -234,8 +235,8 @@ portfolioso:
   faicontext: stack-overflow
   url: https://stackoverflow.com/users/1079836/7h3ram
   metrics:
-    - "Reputation: 1695 (top 22%)"
-    - "Impact: ~492k people reached"
+    - "Reputation: 1715 (top 22%)"
+    - "Impact: ~503k people reached"
     - "Badges: gold:2/silver:15/bronze:17"
 
 media:
