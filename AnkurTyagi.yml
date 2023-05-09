@@ -13,21 +13,21 @@ addressline2: Foster City, CA 94404
 
 trailer:
   - note: "Additional details available upon request."
-    lastupdated: "28/Feb/2023"
+    lastupdated: "09/May/2023"
     signed: Ankur Tyagi
 
 linkedin:
   text: linkedin.com/in/ankurstyagi
   faicontext: linkedin
-  url: https://linkedin.com/in/ankurstyagi
+  url: "https://linkedin.com/in/ankurstyagi"
 twitter:
   text: twitter.com/7h3rAm
   faicontext: twitter
-  url: https://twitter.com/7h3rAm
+  url: "https://twitter.com/7h3rAm"
 blog:
   text: 7h3rAm.github.io
   faicontext: home
-  url: https://7h3rAm.github.io
+  url: "https://7h3rAm.github.io"
 
 intro: "I'm an infosec enthusiast with a strong background in network security (IDS/IPS), anti-malware technologies (EDR/XDR), research methodologies and innovation."
 
@@ -90,41 +90,41 @@ patents:
   patent_date: Dec/2021
 - patent_title: Attack Path and Graph Creation Based on User and System Profiling
   patent_id: US20210021629A1
-  patent_url: https://patents.google.com/patent/US20210021629A1/
+  patent_url: "https://patents.google.com/patent/US20210021629A1/"
   patent_date: Jul/2019
 - patent_title: Attack Kill Chain Generation and Utilization for Threat Analysis
   patent_id: US20200327224A1
-  patent_url: https://patents.google.com/patent/US20200327224A1/
+  patent_url: "https://patents.google.com/patent/US20200327224A1/"
   patent_date: Apr/2019
 - patent_title: Asset Remediation Trend Map Generation and Utilization for Threat Mitigation
   patent_id: US20200329055A1
-  patent_url: https://patents.google.com/patent/US20200329055A1/
+  patent_url: "https://patents.google.com/patent/US20200329055A1/"
   patent_date: Apr/2019
 - patent_title: DSL for Simulating a Threat-Actor and Adversarial TTPs
   patent_id: US10965709B2
-  patent_url: https://patents.google.com/patent/US10965709B2/
+  patent_url: "https://patents.google.com/patent/US10965709B2/"
   patent_date: Apr/2019
 - patent_title: DSL for Defending Against a Threat-Actor and Adversarial TTPs
   patent_id: US10965712B2
-  patent_url: https://patents.google.com/patent/US10965712B2/
+  patent_url: "https://patents.google.com/patent/US10965712B2/"
   patent_date: Apr/2019
 - patent_title: DSL for Threat-Actor Deception
   patent_id: US10958686B2
-  patent_url: https://patents.google.com/patent/US10958686B2/
+  patent_url: "https://patents.google.com/patent/US10958686B2/"
   patent_date: Apr/2019
 - patent_title: Method and Apparatus for Intelligent Aggregation of Threat Behavior
   patent_id: US10104101B1
-  patent_url: https://patents.google.com/patent/US10104101B1/
+  patent_url: "https://patents.google.com/patent/US10104101B1/"
   patent_date: Apr/2017
   patent_description: An attempt towards automated selection and grouping of aggregated threat behavior indicators depicting dominant malware characteristics.
 - patent_title: Using A Probability-based Model To Detect Random Content In Network Traffic
   patent_id: US9680832B1
-  patent_url: https://patents.google.com/patent/US9680832B1/
+  patent_url: "https://patents.google.com/patent/US9680832B1/"
   patent_date: Dec/2014
   patent_description: A novel idea based upon stochastic processes derived machine learning model to identify and classify random/malicious content in network traffic.
 - patent_title: Deobfuscating Scripted Language For Network Intrusion Detection
   patent_id: US9419991B2
-  patent_url: https://patents.google.com/patent/US9419991B2/
+  patent_url: "https://patents.google.com/patent/US9419991B2/"
   patent_date: Sep/2014
   patent_description: An attempt towards normalizing web scripts for network security appliances to consume and operate upon.
 
@@ -135,91 +135,91 @@ talks:
   conferences:
     - name: DEF CON 30 Demo Labs
       date: 13/Aug/2022
-      url: https://forum.defcon.org/node/242258
+      url: "https://forum.defcon.org/node/242258"
 - name: Breach and Attack Simulation
   brief: Automated simulation of adversary TTPs mapped to MITRE ATT&CK framework
   description: 
   conferences:
     - name: Qualys Security Conference 2018 - First Look Showcase
       date: 14/Nov/2018
-      url: https://vimeo.com/301686528#t=27m12s
-      url1: https://www.qualys.com/qsc/2018/las-vegas/
+      url: "https://vimeo.com/301686528#t=27m12s"
+      url1: "https://www.qualys.com/qsc/2018/las-vegas/"
 - name: Angad - Malware Detection using Multi-Dimensional Visualization
   brief: Angad is a tool that can perform visual malware clustering using Hilbert Curves
   description: Angad is a framework to automate classification of an unlabelled malware dataset using multi-dimensional modelling. The input dataset is analyzed to collect various attributes which are then arranged in a number of feature vectors. These vectors are then individually visualized, indexed and then queried for each new input file. Matching vectors are labelled as per their AV detection categories (could be changed to a heuristics approach if needed). If dynamic behavior or network traffic details are available, respective vectors are converted into activity graphs that depict evolution on a predefined time scale. This results into an animation of a malware or a malware category's behaviorial traits and is useful in identifying activity overlaps across the input dataset.
   conferences:
     - name: SecTor 2018
       date: 13/Oct/2018
-      url: https://sector.ca/sessions/angad-a-malware-detection-framework-using-multi-dimensional-visualization/
+      url: "https://sector.ca/sessions/angad-a-malware-detection-framework-using-multi-dimensional-visualization/"
     - name: BSides Zurich 2018
       date: 14/Sep/2018
-      url: https://bsideszh.ch/archive/welcome-2018/agenda/abstracts/
+      url: "https://bsideszh.ch/archive/welcome-2018/agenda/abstracts/"
     - name: GrrCON 2018
       date: 07/Sep/2018
-      url: https://www.youtube.com/watch?v=0lkthFbPOkM&list=PLNhlcxQZJSm-NpvmmiV5J2hwlV7hrQfg-&index=10
+      url: "https://www.youtube.com/watch?v=0lkthFbPOkM&list=PLNhlcxQZJSm-NpvmmiV5J2hwlV7hrQfg-&index=10"
     - name: DEF CON 26 Demo Labs
       date: 11/Aug/2018
-      url: https://www.defcon.org/html/defcon-26/dc-26-demolabs.html#Angad
+      url: "https://www.defcon.org/html/defcon-26/dc-26-demolabs.html#Angad"
 - name: Visual Network and File Forensics
   brief: This presentation showcases the effectiveness of visual tooling for malware and file-format forensics
   description: This presentation aims to demo the effectiveness of visual tooling for malware and file-format forensics. It will cover structural analysis and visualization of malware and network artifacts. Various techniques like entropy/n-gram visualization, using compression-ratio and theoretical minsize to identify file type and packed content will be shown. Along with this, a framework that helps automate these tasks will be presented. Attendees with an interest in network monitoring, signature writing, malware analysis and forensics will find this presentation to be useful.
   conferences:
     - name: DEF CON 25 Packet Hacking Village
       date: 29/Jul/2017
-      url: https://www.wallofsheep.com/pages/dc25#atyagi
+      url: "https://www.wallofsheep.com/pages/dc25#atyagi"
     - name: Virus Bulletin 2017 
       date: (could not attend)
-      url: https://www.virusbulletin.com/conference/vb2017/abstracts/visual-malware-forensics
+      url: "https://www.virusbulletin.com/conference/vb2017/abstracts/visual-malware-forensics"
 - name: Rudra - The Destroyer of Evil
   brief: Rudra provides a framework for exhaustive analysis of PCAP and PE files
   description: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files. It provides features to scan and generate reports that include file's structural properties, entropy visualization, compression ratio, theoretical minsize, etc. These details, alongwith file-format specific analysis information, help an analyst to understand the type of data embedded in a file and quickly decide if it deserves further investigation. It supports scanning PE files and can perform API scans, anti{debug, vm, sandbox} detection, packer detection, authenticode verification, alongwith Yara, shellcode, and regex detection upon them.
   conferences:
     - name: DEF CON 24 Demo Labs
       date: 06/Aug/2016
-      url: https://www.defcon.org/html/defcon-24/dc-24-demolabs.html#Tyagi
+      url: "https://www.defcon.org/html/defcon-24/dc-24-demolabs.html#Tyagi"
     - name: Black Hat USA 2016 Arsenal
       date: 03/Aug/2016
-      url: https://www.blackhat.com/us-16/arsenal.html#ankur-tyagi
+      url: "https://www.blackhat.com/us-16/arsenal.html#ankur-tyagi"
     - name: OWASP Pune Meet
       date: 28/Jul/2016
-      url: https://www.owasp.org/index.php/OWASP_Pune_Meeting_May/July_2016
+      url: "https://www.owasp.org/index.php/OWASP_Pune_Meeting_May/July_2016"
     - name: Black Hat Asia 2016 Arsenal
       date: 31/Mar/2016
-      url: https://www.blackhat.com/asia-16/arsenal.html#ankur-tyagi
+      url: "https://www.blackhat.com/asia-16/arsenal.html#ankur-tyagi"
     - name: Black Hat EU 2015 Arsenal
       date: 13/Nov/2015
-      url: https://www.blackhat.com/eu-15/arsenal.html#ankur-tyagi
+      url: "https://www.blackhat.com/eu-15/arsenal.html#ankur-tyagi"
     - name: DEF CON 23 Demo Labs
       date: 08/Aug/2015
-      url: https://www.defcon.org/html/defcon-23/dc-23-demo-labs-schedule.html#Tyagi
+      url: "https://www.defcon.org/html/defcon-23/dc-23-demo-labs-schedule.html#Tyagi"
     - name: Black Hat USA 2015 Arsenal
       date: 05/Aug/2015
-      url: https://www.blackhat.com/us-15/arsenal.html#ankur-tyagi
+      url: "https://www.blackhat.com/us-15/arsenal.html#ankur-tyagi"
 - name: Flowinspect - Network Inspection Tool on Steroids
   brief: Flowinspect is a tool for network monitoring and inspection purposes
   description: Flowinspect is a tool developed specifically for network monitoring and inspection purposes. It takes network traffic as input and extracts layer 4 flows from it. These flows are then passed through an inspection engine that filters and extracts interesting network sessions. For flows that meet inspection criteria, the output mode dumps match statistics to either stdout or a file or both.
   conferences:
     - name: Black Hat USA 2014 Arsenal
       date: 06/Aug/2014
-      url: https://www.blackhat.com/us-14/arsenal.html#Tyagi
+      url: "https://www.blackhat.com/us-14/arsenal.html#Tyagi"
     - name: Nullcon 2014
       date: 14/Feb/2014
-      url: https://archive.nullcon.net/website/archives/goa-2014.php
-      urlvideo: https://www.youtube.com/watch?v=E4YptOJzVXQ
+      url: "https://archive.nullcon.net/website/archives/goa-2014.php"
+      urlvideo: "https://www.youtube.com/watch?v=E4YptOJzVXQ"
 
 portfoliogs:
   name: Google Scholar
   faicontext: graduation-cap
-  url: https://scholar.google.com/citations?hl=en&user=fukhpJ0AAAAJ
+  url: "https://scholar.google.com/citations?hl=en&user=fukhpJ0AAAAJ"
   metrics:
-    - "citations: 43"
+    - "citations: 48"
     - "h-index: 3"
-    - "i10-index: 2"
+    - "i10-index: 3"
 
 portfoliogh:
   name: GitHub
   faicontext: github
-  url: https://github.com/7h3rAm
+  url: "https://github.com/7h3rAm"
   metrics:
     - "Rank: S (top 25%)"
     - "Commits: 16.4k"
@@ -227,66 +227,70 @@ portfoliogh:
     - "Followers: 142"
     - "Pull Requests: 16"
     #- "Repositories: 24"
-    - "Stars: 328"
+    - "Stars: 338"
     - "Languages: python/c/assembly/shell/tex"
 
 portfolioso:
   name: StackOverflow
   faicontext: stack-overflow
-  url: https://stackoverflow.com/users/1079836/7h3ram
+  url: "https://stackoverflow.com/users/1079836/7h3ram"
   metrics:
-    - "Reputation: 1715 (top 22%)"
-    - "Impact: ~503k people reached"
+    - "Reputation: 1735 (top 22%)"
+    - "Impact: ~517k people reached"
     - "Badges: gold:2/silver:15/bronze:17"
 
 media:
   - topic: Bossie Awards 2017 - The best networking and security software
     publication: InfoWorld
     year: Sep/2017
-    url: https://www.infoworld.com/article/3227605/security/bossie-awards-2017-the-best-networking-and-security-software.html#slide12
+    url: "https://www.infoworld.com/article/3227605/security/bossie-awards-2017-the-best-networking-and-security-software.html#slide12"
   - topic: Visual network and file forensics with Rudra
     publication: HelpNet Security
     year: Sep/2017
-    url: https://www.helpnetsecurity.com/2017/09/12/rudra-file-forensics/
+    url: "https://www.helpnetsecurity.com/2017/09/12/rudra-file-forensics/"
   - topic: Rudra - Framework for inspection of network capture files
     publication: HelpNet Security
     year: Sep/2015
-    url: https://www.helpnetsecurity.com/2015/09/04/rudra-framework-for-automated-inspection-of-network-capture-files/
+    url: "https://www.helpnetsecurity.com/2015/09/04/rudra-framework-for-automated-inspection-of-network-capture-files/"
   - topic: Network Sorcery with ChopShop and Libemu
     publication: PenTest Magazine
     year: Mar/2014
-    url: https://pentestmag.com/
+    url: "https://pentestmag.com/"
 
 academics:
   - course: M.Tech Software Systems
     institute: BITS-Pilani
-    url: https://bits-pilani-wilp.ac.in/
+    url: "https://bits-pilani-wilp.ac.in/"
     year: Dec/2014
     thesis: Rudra - Framework for Automated Inspection of Network Flows
-    thesis_url: https://github.com/7h3rAm/rudra
+    thesis_url: "https://github.com/7h3rAm/rudra"
     score: 6.65
     grade: Excellent
   - course: BE Information Technology
     institute: Pune University
-    url: http://www.unipune.ac.in/
+    url: "http://www.unipune.ac.in/"
     year: Jul/2010
     thesis: Insider Threats - Research on ARP Security Flaws and Solutions
-    thesis_url: https://github.com/7h3rAm/arp-secur
+    thesis_url: "https://github.com/7h3rAm/arp-secur"
     score: 6.58
     grade: First Class
 
 certifications:
+  - name: "Attacking and Defending Azure Cloud: Beginner's Edition"
+    institute: Altered Security
+    year: Mar/2023
+    url: "https://www.credential.net/2e7ecdb9-14a3-4bd1-8e29-48cc06d438d2"
   - name: Amateur Radio Operator (KN6VLB)
     institute: Federal Communications Commission
     year: Aug/2022
-    url: https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=4651053
+    url: "https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=4651053"
   - name: GIAC Penetration Tester (GPEN)
     institute: SANS
     year: Mar/2012
-    url: https://www.giac.org/certifications/penetration-tester-gpen/
+    url: "https://www.giac.org/certifications/penetration-tester-gpen/"
   - name: Cisco Certified Network Security Associate (CCNA)
     institute: Cisco
-    url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html
+    url: "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html"
     year: Jan/2010
 
 courses:
