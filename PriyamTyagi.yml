@@ -40,7 +40,7 @@ experience:
   city: Pune
   description:
     - Led a team of engineers, spread globally, to design and develop a single payment hub for BofA, enabling integration of multiple payment applications
-    - Developed web services with REST API, end of day settlement batch jobs using Spring Batch 
+    - Developed web services with REST API, end of day settlement batch jobs using Spring Batch
     - Integration with Zelle, formerly known as ClearXchange, to enable domestic transfer between participating banks using message queues (SOAP over JMS)
     - Solved integration issues efficiently in a fast paced environment using strong interpersonal skills that resulted in better coordination amongst participating teams
     - Submitted multiple ideas with PoCs that were later integrated in product to benefit online banking users
@@ -51,7 +51,7 @@ experience:
   city: Bangalore/Pune
   description:
     - Worked extensively on overhaul of Payments project in BofA
-    - Guided a development team of engineers to build payment disbursement system for corporate clients of BofA 
+    - Guided a development team of engineers to build payment disbursement system for corporate clients of BofA
     - Built batch jobs using Spring Batch to automate payment processing and settlement of funds
     - Achieved zero defect development by promoting TDD, careful design of unit test cases and peer code review using Crucible
     - Contributed an idea that led to the removal of redundant code. The idea was to leverage use of stored account details of customers in newly constructed Payments DB and therefore removing calls to SPX for the same. This improved web service response time
