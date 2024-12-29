@@ -4,30 +4,40 @@ mainfont: Hoefler Text
 fontsize: 9pt
 lang: en-US
 geometry: a4paper, left=2.1cm, right=2.1cm, top=2.1cm, bottom=2.1cm
-pdfsubject: aHR0cHM6Ly83aDNyYW0uZ2l0aHViLmlvL3BhZ2VzL2N2Lmh0bWw=
+pdfsubject: dGZmYmc7Li42dDJkb3svdXdmdGluL3djLmJvdXNnLnFoL3Rme3g=
 name: Ankur Tyagi
-phone: +1 650-542-1134
-email: ankurt.20@gmail.com
-addressline1: 807 Catamaran St, Apt 2
-addressline2: Foster City, CA 94404
+address: 807 Catamaran St. Apt 2, Foster City, CA 94404
 
 trailer:
   - note: "Additional details available upon request."
-    lastupdated: "28/Dec/2024"
+    lastupdated: "29/Dec/2024"
     signed: Ankur Tyagi
 
-linkedin:
-  text: linkedin.com/in/ankurstyagi
-  faicontext: linkedin
-  url: "https://linkedin.com/in/ankurstyagi"
-twitter:
-  text: twitter.com/7h3rAm
-  faicontext: twitter
-  url: "https://twitter.com/7h3rAm"
-blog:
-  text: 7h3rAm.github.io
-  faicontext: home
-  url: "https://7h3rAm.github.io"
+contact:
+  location:
+    text: SF Bay Area
+    faicontext: home
+    url:
+  call:
+    text: +1 650-542-1134
+    faicontext: phone
+    url:
+  email:
+    text: ankurt.20
+    faicontext: at
+    url: ankurt.20@gmail.com
+  linkedin:
+    text: ankurstyagi
+    faicontext: linkedin
+    url: "https://linkedin.com/in/ankurstyagi"
+  twitter:
+    text: 7h3rAm
+    faicontext: twitter
+    url: "https://twitter.com/7h3rAm"
+  blog:
+    text: 7h3rAm.github.io
+    faicontext: globe
+    url: "https://7h3rAm.github.io"
 
 intro: "I'm an infosec enthusiast with a strong background in network security (IDS/IPS), anti-malware technologies (EDR/XDR), research methodologies and innovation."
 
@@ -40,44 +50,67 @@ experience:
   - employer: Cisco Talos Intelligence Group
     years: Aug/2023 - Present
     duration: 1 yr 5 mos
-    job: Security Research Engineer
-    city: Foster City
-    description:
-      - "Detection Engineering and Vulnerability Research"
-      - "Snort & ClamAV"
+    positions:
+      - title: Security Research Engineer
+        team: Network Threat Detection & Response (NTDR)
+        city: Foster City
+        years: Aug/2023 - Present
+        duration: 1 yr 5 mos
+        description:
+          - "Detection Engineering and Vulnerability Research"
+          - "Snort & ClamAV"
+
   - employer: Qualys Inc.
     years: Apr/2015 - Aug/2023
     duration: 8 yrs 5 mos
-    job: Principal Engineer
-    city: Foster City
-    description:
-      - "Product research, design and PoC: Breach Simulation, Security Control Validation, Attack Surface Mapping, Asset Remediation Trendmap"
-      - "Research and automation: Threat Intelligence feeds evaluation and aggregation, False Positive validation, events whitelisting, risk scoring, rule parsers"
-      - "MITRE ATT&CK TTP correlation (adversary killchain), quantification and scoring"
-      - "Subject Matter Expert for research/innovation and automation worflows"
-      - "Research towards automated aggregation of threat behavior and generic (Yara/IoC) rule creation"
-      - "Lead architect for in-house automation projects (sourcing/filtering/scanning of malware samples)"
-      - "Subject Matter Expert for AntiMalware and network security research initiatives"
-      - "Tech/Domain: Python, Shell, Unix, Windows, AntiMalware, Yara, IoC, EDR, XDR, Threat Intelligence"
+    positions:
+      - title: Principal Engineer
+        team: Threat Research Unit (TRU)
+        city: Foster City
+        years: Jan/2019 - Aug/2023
+        duration: 4 yrs 8 mos
+        description:
+          - "Breach Simulation, Security Control Validation, Attack Surface Mapping, Asset Remediation Trendmap"
+          - "Threat Intelligence feeds evaluation and aggregation, False Positive validation, event whitelisting, risk scoring, rule parsers and converters"
+          - "MITRE ATT&CK TTP correlation (adversary killchain), quantification and scoring"
+          - "Technologies: Python, Shell, Unix, Windows, AntiMalware, Yara, IoC, EDR, XDR, Threat Intelligence"
+      - title: Research Engineer
+        team: Malware Lab
+        city: Pune, Foster City
+        years: Apr/2015 - Jan/2019
+        duration: 3 yrs 10 mos
+        description:
+          - "Research towards automated aggregation of threat behavior and generic (Yara/IoC) rule creation"
+          - "Lead for multiple in-house automation projects (sourcing/filtering/scanning of malware samples)"
+
   - employer: Juniper Networks
-    duration: 2 yrs 11 mos
     years: Apr/2012 - Feb/2015
-    job: Security Research Engineer
-    city: Bangalore
-    description:
-      - "Maintaining in-house automation tools for coverage against multiple exploitation frameworks"
-      - "Signature development for Juniper's security portfolio devices against latest vulnerabilities and exploits"
-      - "Regular updates of active signatures to increase accuracy and coverage against evolving evasion techniques"
-      - "Tech/Domain: Python, Shell, Unix, Windows, IDS, IPS"
+    duration: 2 yrs 11 mos
+    positions:
+      - title: Security Research Engineer
+        team: Network Signatures Team
+        city: Bangalore
+        years: Apr/2012 - Feb/2015
+        duration: 2 yrs 11 mos
+        description:
+          - "Maintaining in-house automation tools for coverage against multiple exploitation frameworks"
+          - "Signature development for Juniper's security portfolio devices against latest vulnerabilities and exploits"
+          - "Regular updates of active signatures to increase accuracy and coverage against evolving evasion techniques"
+          - "Tech/Domain: Python, Shell, Unix, Windows, IDS, IPS"
+
   - employer: SecurView Systems
-    duration: 1 yr and 5 mos
     years: Dec/2010 - Apr/2012
-    job: Information Security Engineer
-    city: Pune
-    description:
-      - "Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
-      - "Active member of the Secur-I Research Group with monthly publication of critical vulnerability assessments"
-      - "Tech/Domain: Python, Shell, Unix, Windows, Vulnerability Research"
+    duration: 1 yr 5 mos
+    positions:
+      - title: Information Security Engineer
+        team: IntelliShield Alert Manager Team
+        city: Pune
+        years: Dec/2010 - Apr/2012
+        duration: 1 yr 5 mos
+        description:
+          - "Vulnerability Researcher / Security Analyst for the Cisco Security IntelliShield Alert Manager Service"
+          - "Active member of the Secur-I Research Group with monthly publication of critical vulnerability assessments"
+          - "Tech/Domain: Python, Shell, Unix, Windows, Vulnerability Research"
 
 patents_portfolio_url: "https://patents.google.com/?q=ankur+tyagi&assignee=Juniper+Networks%2CQualys"
 patents:
@@ -137,6 +170,7 @@ talks:
       - name: DEF CON 30 Demo Labs
         date: 13/Aug/2022
         url: "https://forum.defcon.org/node/242258"
+        urlarchive: "https://web.archive.org/web/20240707063043/https://forum.defcon.org/node/242258"
   - name: Breach and Attack Simulation
     brief: Automated simulation of adversary TTPs mapped to MITRE ATT&CK framework
     description:
@@ -144,7 +178,7 @@ talks:
       - name: Qualys Security Conference 2018 - First Look Showcase
         date: 14/Nov/2018
         url: "https://vimeo.com/301686528#t=27m12s"
-        url1: "https://www.qualys.com/qsc/2018/las-vegas/"
+        urlalt: "https://www.qualys.com/qsc/2018/las-vegas/"
   - name: Angad - Malware Detection using Multi-Dimensional Visualization
     brief: Angad is a tool that can perform visual malware clustering using Hilbert Curves
     description: Angad is a framework to automate classification of an unlabelled malware dataset using multi-dimensional modelling. The input dataset is analyzed to collect various attributes which are then arranged in a number of feature vectors. These vectors are then individually visualized, indexed and then queried for each new input file. Matching vectors are labelled as per their AV detection categories (could be changed to a heuristics approach if needed). If dynamic behavior or network traffic details are available, respective vectors are converted into activity graphs that depict evolution on a predefined time scale. This results into an animation of a malware or a malware category's behaviorial traits and is useful in identifying activity overlaps across the input dataset.
@@ -152,15 +186,18 @@ talks:
       - name: SecTor 2018
         date: 13/Oct/2018
         url: "https://sector.ca/sessions/angad-a-malware-detection-framework-using-multi-dimensional-visualization/"
+        urlarchive: "https://web.archive.org/web/20230327031531/https://sector.ca/sessions/angad-a-malware-detection-framework-using-multi-dimensional-visualization/"
       - name: BSides Zurich 2018
         date: 14/Sep/2018
         url: "https://bsideszh.ch/archive/welcome-2018/agenda/abstracts/"
+        urlarchive: "https://web.archive.org/web/20240722004151/https://bsideszh.ch/archive/welcome-2018/agenda/abstracts/"
       - name: GrrCON 2018
         date: 07/Sep/2018
         url: "https://www.youtube.com/watch?v=0lkthFbPOkM&list=PLNhlcxQZJSm-NpvmmiV5J2hwlV7hrQfg-&index=10"
       - name: DEF CON 26 Demo Labs
         date: 11/Aug/2018
         url: "https://www.defcon.org/html/defcon-26/dc-26-demolabs.html#Angad"
+        urlarchive: "https://web.archive.org/web/20240910200453/https://www.defcon.org/html/defcon-26/dc-26-demolabs.html#Angad"
   - name: Visual Network and File Forensics
     brief: This presentation showcases the effectiveness of visual tooling for malware and file-format forensics
     description: This presentation aims to demo the effectiveness of visual tooling for malware and file-format forensics. It will cover structural analysis and visualization of malware and network artifacts. Various techniques like entropy/n-gram visualization, using compression-ratio and theoretical minsize to identify file type and packed content will be shown. Along with this, a framework that helps automate these tasks will be presented. Attendees with an interest in network monitoring, signature writing, malware analysis and forensics will find this presentation to be useful.
@@ -168,9 +205,11 @@ talks:
       - name: DEF CON 25 Packet Hacking Village
         date: 29/Jul/2017
         url: "https://www.wallofsheep.com/pages/dc25#atyagi"
+        urlarchive: "https://web.archive.org/web/20240814220543/https://www.wallofsheep.com/pages/dc25#atyagi"
       - name: Virus Bulletin 2017
         date: (could not attend)
         url: "https://www.virusbulletin.com/conference/vb2017/abstracts/visual-malware-forensics"
+        urlarchive: "https://web.archive.org/web/20240429151833/https://www.virusbulletin.com/conference/vb2017/abstracts/visual-malware-forensics/"
   - name: Rudra - The Destroyer of Evil
     brief: Rudra provides a framework for exhaustive analysis of PCAP and PE files
     description: Rudra aims to provide a developer-friendly framework for exhaustive analysis of PCAP and PE files. It provides features to scan and generate reports that include file's structural properties, entropy visualization, compression ratio, theoretical minsize, etc. These details, alongwith file-format specific analysis information, help an analyst to understand the type of data embedded in a file and quickly decide if it deserves further investigation. It supports scanning PE files and can perform API scans, anti{debug, vm, sandbox} detection, packer detection, authenticode verification, alongwith Yara, shellcode, and regex detection upon them.
@@ -178,24 +217,27 @@ talks:
       - name: DEF CON 24 Demo Labs
         date: 06/Aug/2016
         url: "https://www.defcon.org/html/defcon-24/dc-24-demolabs.html#Tyagi"
+        urlarchive: "https://web.archive.org/web/20241126235821/https://defcon.org/html/defcon-24/dc-24-demolabs.html#Tyagi"
       - name: Black Hat USA 2016 Arsenal
         date: 03/Aug/2016
         url: "https://www.blackhat.com/us-16/arsenal.html#ankur-tyagi"
-      - name: OWASP Pune Meet
-        date: 28/Jul/2016
-        url: "https://www.owasp.org/index.php/OWASP_Pune_Meeting_May/July_2016"
+        urlarchive: "https://web.archive.org/web/20241215181918/https://www.blackhat.com/us-16/arsenal.html#ankur-tyagi"
       - name: Black Hat Asia 2016 Arsenal
         date: 31/Mar/2016
         url: "https://www.blackhat.com/asia-16/arsenal.html#ankur-tyagi"
+        urlarchive: "https://web.archive.org/web/20241126050508/https://www.blackhat.com/asia-16/arsenal.html#ankur-tyagi"
       - name: Black Hat EU 2015 Arsenal
         date: 13/Nov/2015
         url: "https://www.blackhat.com/eu-15/arsenal.html#ankur-tyagi"
+        urlarchive: "https://web.archive.org/web/20240901000000*/https://www.blackhat.com/eu-15/arsenal.html#ankur-tyagi"
       - name: DEF CON 23 Demo Labs
         date: 08/Aug/2015
         url: "https://www.defcon.org/html/defcon-23/dc-23-demo-labs-schedule.html#Tyagi"
+        urlarchive: "https://web.archive.org/web/20240913222324/https://www.defcon.org/html/defcon-23/dc-23-demo-labs-schedule.html#Tyagi"
       - name: Black Hat USA 2015 Arsenal
         date: 05/Aug/2015
         url: "https://www.blackhat.com/us-15/arsenal.html#ankur-tyagi"
+        urlarchive: "https://web.archive.org/web/20241204102237/https://www.blackhat.com/us-15/arsenal.html#ankur-tyagi"
   - name: Flowinspect - Network Inspection Tool on Steroids
     brief: Flowinspect is a tool for network monitoring and inspection purposes
     description: Flowinspect is a tool developed specifically for network monitoring and inspection purposes. It takes network traffic as input and extracts layer 4 flows from it. These flows are then passed through an inspection engine that filters and extracts interesting network sessions. For flows that meet inspection criteria, the output mode dumps match statistics to either stdout or a file or both.
@@ -203,9 +245,11 @@ talks:
       - name: Black Hat USA 2014 Arsenal
         date: 06/Aug/2014
         url: "https://www.blackhat.com/us-14/arsenal.html#Tyagi"
+        urlarchive: "https://web.archive.org/web/20240205065750/https://www.blackhat.com/us-14/arsenal.html#Tyagi"
       - name: Nullcon 2014
         date: 14/Feb/2014
         url: "https://archive.nullcon.net/website/archives/goa-2014.php"
+        urlarchive: "https://web.archive.org/web/20240926114037/https://archive.nullcon.net/website/archives/goa-2014.php"
         urlvideo: "https://www.youtube.com/watch?v=E4YptOJzVXQ"
 
 portfoliogs:
@@ -213,7 +257,7 @@ portfoliogs:
   faicontext: graduation-cap
   url: "https://scholar.google.com/citations?hl=en&user=fukhpJ0AAAAJ"
   metrics:
-    - "citations: 98"
+    - "Citations: 98"
     - "h-index: 4"
     - "i10-index: 3"
 
@@ -241,18 +285,27 @@ portfolioso:
     - "Badges: gold:2/silver:16/bronze:18"
 
 media:
+  - topic: Hackers of India
+    publication: Hacking Archives of India
+    year: Oct/2020
+    url: "https://hackingarchivesofindia.com/hacker/ankur_tyagi/"
+    urlarchive: "https://web.archive.org/web/20240913212937/https://hackingarchivesofindia.com/hacker/ankur_tyagi/"
+    urlarchivealt: "https://web.archive.org/web/20240204184234/https://www.linkedin.com/pulse/introducing-hacking-archives-india-anant-shrivastava/"
   - topic: Bossie Awards 2017 - The best networking and security software
     publication: InfoWorld
     year: Sep/2017
-    url: "https://www.infoworld.com/article/3227605/security/bossie-awards-2017-the-best-networking-and-security-software.html#slide12"
+    url: "https://www.infoworld.com/article/2256958/bossie-awards-2017-the-best-networking-and-security-software.html"
+    urlarchive: "https://web.archive.org/web/20241229155705/https://www.infoworld.com/article/2256958/bossie-awards-2017-the-best-networking-and-security-software.html"
   - topic: Visual network and file forensics with Rudra
     publication: HelpNet Security
     year: Sep/2017
     url: "https://www.helpnetsecurity.com/2017/09/12/rudra-file-forensics/"
+    urlarchive: "https://web.archive.org/web/20240524173301/https://www.helpnetsecurity.com/2017/09/12/rudra-file-forensics/"
   - topic: Rudra - Framework for inspection of network capture files
     publication: HelpNet Security
     year: Sep/2015
     url: "https://www.helpnetsecurity.com/2015/09/04/rudra-framework-for-automated-inspection-of-network-capture-files/"
+    urlarchive: "https://web.archive.org/web/20240524073738/https://www.helpnetsecurity.com/2015/09/04/rudra-framework-for-automated-inspection-of-network-capture-files/"
   - topic: Network Sorcery with ChopShop and Libemu
     publication: PenTest Magazine
     year: Mar/2014
@@ -277,6 +330,10 @@ academics:
     grade: First Class
 
 certifications:
+  - name: Generative AI for Everyone
+    institute: DeepLearning.ai
+    year: Nov/2024
+    url: "https://www.coursera.org/learn/generative-ai-for-everyone"
   - name: "Attacking and Defending Azure Cloud: Beginner's Edition"
     institute: Altered Security
     year: Mar/2023

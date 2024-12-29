@@ -11,7 +11,8 @@
 
 \usepackage{fontspec}
 \usepackage{fontawesome5}
-\usepackage[dvipsnames]{xcolor} %https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+%\usepackage[dvipsnames]{xcolor} %https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+\usepackage[svgnames]{xcolor}
 
 % Do not indent paragraphs
 \setlength\parindent{0in}
@@ -61,8 +62,8 @@ $endif$
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
   urlcolor=MidnightBlue,
-  linkcolor=CornflowerBlue,
-  citecolor=WildStrawberry
+  linkcolor=Blue,
+  citecolor=VioletRed,
 }
 
 % DOCUMENT
@@ -70,18 +71,24 @@ $endif$
 \begin{document}
 
 \textcolor{Maroon}{\LARGE \textbf{$name$}}\\[.3cm]
-\textcolor{darkgray}{\faIcon{at}} \href{mailto:$email$}{$email$} • \textcolor{darkgray}{\faIcon{$linkedin.faicontext$}} \href{$linkedin.url$}{$linkedin.text$} • \textcolor{darkgray}{\faIcon{$twitter.faicontext$}} \href{$twitter.url$}{$twitter.text$} • \textcolor{darkgray}{\faIcon{$blog.faicontext$}} \href{$blog.url$}{$blog.text$}\\[.3cm]
+\textcolor{Gray}{\faIcon{$contact.email.faicontext$}} \href{mailto:$contact.email.url$}{$contact.email.text$} • \textcolor{OliveDrab}{\faIcon{$contact.blog.faicontext$}} \href{$contact.blog.url$}{$contact.blog.text$} • \textcolor{MediumTurquoise}{\faIcon{$contact.twitter.faicontext$}} \href{$contact.twitter.url$}{$contact.twitter.text$} • \textcolor{SteelBlue}{\faIcon{$contact.linkedin.faicontext$}} \href{$contact.linkedin.url$}{$contact.linkedin.text$}\\[.3cm]
 $intro$
 
 \section*{\textcolor{Maroon}{Experience}}
 $for(experience)$
   \begin{enumerate}
     [topsep=10pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
-    \item{\textcolor{darkgray}{\textbf{$experience.job$} at \textbf{$experience.employer$}} \hfill $experience.years$} ({\footnotesize{\textcolor{darkgray}{$experience.duration$}}})
-    $for(experience.description)$
+    \item{{\textbf{$experience.employer$}} \hfill $experience.years$}
+    $for(experience.positions)$
     \begin{enumerate}
       [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
-      \item{$experience.description$}
+      \item{{\textbf{$experience.positions.title$}}, {\textbf{$experience.positions.team$}}} \hfill \textcolor{Gray}{(\footnotesize{$experience.positions.duration$})}
+      $for(experience.positions.description)$
+        \begin{enumerate}
+        [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
+        \item{$experience.positions.description$}
+        \end{enumerate}
+      $endfor$
     \end{enumerate}
     $endfor$
   \end{enumerate}
@@ -107,7 +114,7 @@ $endfor$
 $for(talks)$
   \begin{enumerate}
     [topsep=10pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
-    \item{\textcolor{darkgray}{\textbf{$talks.name$}}\\$talks.brief$}
+    \item{{\textbf{$talks.name$}}\\$talks.brief$}
     $for(talks.conferences)$
     \begin{enumerate}
       [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
@@ -119,19 +126,19 @@ $endfor$
 
 \section*{\textcolor{Maroon}{Portfolio}}
 \begin{multicols}{3}
-  \textcolor{darkgray}{\faIcon{$portfoliogs.faicontext$}} \href{$portfoliogs.url$}{$portfoliogs.name$}\\
+  \textcolor{CornflowerBlue}{\faIcon{$portfoliogs.faicontext$}} \href{$portfoliogs.url$}{$portfoliogs.name$}\\
   $for(portfoliogs.metrics)$
     • $portfoliogs.metrics$\\
   $endfor$
 
 \columnbreak
-  \textcolor{darkgray}{\faIcon{$portfoliogh.faicontext$}} \href{$portfoliogh.url$}{$portfoliogh.name$}\\
+  \textcolor{Black}{\faIcon{$portfoliogh.faicontext$}} \href{$portfoliogh.url$}{$portfoliogh.name$}\\
   $for(portfoliogh.metrics)$
     • $portfoliogh.metrics$\\
   $endfor$
 
 \columnbreak
-  \textcolor{darkgray}{\faIcon{$portfolioso.faicontext$}} \href{$portfolioso.url$}{$portfolioso.name$}\\
+  \textcolor{Coral}{\faIcon{$portfolioso.faicontext$}} \href{$portfolioso.url$}{$portfolioso.name$}\\
   $for(portfolioso.metrics)$
     • $portfolioso.metrics$\\
   $endfor$
@@ -148,15 +155,15 @@ $endfor$
 $for(academics)$
   \begin{enumerate}
     [topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=10pt,label=•]
-    \item{\textcolor{darkgray}{\textbf{$academics.course$}}, \textbf{\href{$academics.url$}{$academics.institute$}} \hfill $academics.year$\\Thesis: \href{$academics.thesis_url$}{$academics.thesis$}}
+    \item{{\textbf{$academics.course$}}, \textbf{\href{$academics.url$}{$academics.institute$}} \hfill $academics.year$\\Thesis: \href{$academics.thesis_url$}{$academics.thesis$}}
   \end{enumerate}
 $endfor$
 
 \vspace*{\fill}
 $for(trailer)$
   %{$trailer.note$}\\
-  \footnotesize{\textcolor{darkgray}{Last updated: $trailer.lastupdated$}}\\
-  %\textcolor{darkgray}{\textbf{$trailer.signed$}}
+  \footnotesize{\textcolor{Gray}{Last update: $trailer.lastupdated$}}\\
+  %\textcolor{Black}{\textbf{$trailer.signed$}}
 $endfor$
 
 \end{document}

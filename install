@@ -1,7 +1,10 @@
-apt-get install pandoc
-apt-get install xelatex
-apt-get install texlive-xetex
-apt-get install texlive-geometry
-apt-get install texlive-latex-base
-apt-get install texlive-latex-extra
-apt-get install texlive-fonts-recommended
+cd $PROJECTSDIR
+git clone git@github.com:7h3rAm/cv.git
+cd $PROJECTSDIR/cv
+sudo pacman -S texlive pandoc
+aurinstal extra/texlive-langgreek
+mkdir -pv ~/.local/share/fonts
+cp $PROJECTSDIR/cv/Hoefler_Text/ ~/.local/share/fonts
+ll ~/.local/share/fonts/Hoefler_Text
+fc-cache -fv
+make
