@@ -30,6 +30,10 @@ $if(lang)$
   \setmainlanguage{$lang$}
 $endif$
 
+% HEADINGS (load before libertine to avoid warnings)
+%--------------------------------
+\usepackage{sectsty}
+
 % TYPOGRAPHY
 %--------------------------------
 \usepackage{libertine}
@@ -47,11 +51,6 @@ $endif$
 \renewcommand*{\raggedleftmarginnote}{}
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
-
-% HEADINGS
-%--------------------------------
-\usepackage{sectsty}
-\usepackage[normalem]{ulem}
 \sectionfont{\rmfamily\mdseries}
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize\textbf}
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}

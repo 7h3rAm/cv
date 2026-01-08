@@ -1,16 +1,16 @@
 ---
 title: AnkurTyagi-CV
 mainfont: Hoefler Text
-fontsize: 9pt
+fontsize: 10pt
 lang: en-US
 geometry: a4paper, left=2.1cm, right=2.1cm, top=2.1cm, bottom=2.1cm
 pdfsubject: dGZmYmc7Li42dDJkb3svdXdmdGluL3djLmJvdXNnLnFoL3Rme3g=
 name: Ankur Tyagi
-address: 807 Catamaran St. Apt 2, Foster City, CA 94404
+address: 143 Tivoli Ln, Danville, CA 94506
 
 trailer:
   - note: "Additional details available upon request."
-    lastupdated: "29/Dec/2024"
+    lastupdated: "08/Jan/2026"
     signed: Ankur Tyagi
 
 contact:
@@ -33,7 +33,7 @@ contact:
   twitter:
     text: 7h3rAm
     faicontext: twitter
-    url: "https://twitter.com/7h3rAm"
+    url: "https://x.com/7h3rAm"
   blog:
     text: 7h3rAm.github.io
     faicontext: globe
@@ -49,17 +49,16 @@ specialties:
 experience:
   - employer: Cisco Talos Intelligence Group
     years: Aug/2023 - Present
-    duration: 1 yr 5 mos
+    duration: 2 yrs 4 mos
     positions:
       - title: Security Research Engineer
         team: Network Threat Detection & Response (NTDR)
-        city: Foster City
+        city: Danville
         years: Aug/2023 - Present
-        duration: 1 yr 5 mos
+        duration: 2 yrs 4 mos
         description:
           - "Detection Engineering and Vulnerability Research"
           - "Snort & ClamAV"
-
   - employer: Qualys Inc.
     years: Apr/2015 - Aug/2023
     duration: 8 yrs 5 mos
@@ -82,7 +81,6 @@ experience:
         description:
           - "Research towards automated aggregation of threat behavior and generic (Yara/IoC) rule creation"
           - "Lead for multiple in-house automation projects (sourcing/filtering/scanning of malware samples)"
-
   - employer: Juniper Networks
     years: Apr/2012 - Feb/2015
     duration: 2 yrs 11 mos
@@ -97,7 +95,6 @@ experience:
           - "Signature development for Juniper's security portfolio devices against latest vulnerabilities and exploits"
           - "Regular updates of active signatures to increase accuracy and coverage against evolving evasion techniques"
           - "Tech/Domain: Python, Shell, Unix, Windows, IDS, IPS"
-
   - employer: SecurView Systems
     years: Dec/2010 - Apr/2012
     duration: 1 yr 5 mos
@@ -114,53 +111,50 @@ experience:
 
 patents_portfolio_url: "https://patents.google.com/?q=ankur+tyagi&assignee=Juniper+Networks%2CQualys"
 patents:
+  - patent_title: Quantification of Security Events using Behavioral, Analytical and Threat Intelligence Attributes
+    patent_id: US12417292B2
+    patent_date: Dec/2021
+    patent_url: "https://patents.google.com/patent/US12417292B2/"
   - patent_title: Quantification of Adversary TTPs Using Threat Attribute Groupings and Correlation
     patent_id: US12034743B2
+    patent_date: Nov/2021
     patent_url: "https://patents.google.com/patent/US12034743B2/"
-    patent_date: Dec/2021
-  - patent_title: Security Event Modeling Using Behavioral, Analytical, and Threat Intelligence Attributes
-    patent_id: US20240152626A1
-    patent_url: "https://patents.google.com/patent/US20240152626A1/"
-    patent_date: Dec/2021
   - patent_title: Attack Path and Graph Creation Based on User and System Profiling
-    patent_id: US20210021629A1
-    patent_url: "https://patents.google.com/patent/US20210021629A1/"
+    patent_id: US11968225B2
     patent_date: Jul/2019
+    patent_url: "https://patents.google.com/patent/US11968225B2/"
   - patent_title: Attack Kill Chain Generation and Utilization for Threat Analysis
-    patent_id: US20200327224A1
-    patent_url: "https://patents.google.com/patent/US20200327224A1/"
+    patent_id: US11334666B2
     patent_date: Apr/2019
-  - patent_title: Asset Remediation Trend Map Generation and Utilization for Threat Mitigation
-    patent_id: US20200329055A1
-    patent_url: "https://patents.google.com/patent/US20200329055A1/"
-    patent_date: Apr/2019
+    patent_url: "https://patents.google.com/patent/US11334666B2/"
   - patent_title: DSL for Simulating a Threat-Actor and Adversarial TTPs
-    patent_id: US10965709B2
-    patent_url: "https://patents.google.com/patent/US10965709B2/"
+    patent_id: US11805147B2
     patent_date: Apr/2019
+    patent_url: "https://patents.google.com/patent/US11805147B2/"
   - patent_title: DSL for Defending Against a Threat-Actor and Adversarial TTPs
-    patent_id: US10965712B2
-    patent_url: "https://patents.google.com/patent/US10965712B2/"
+    patent_id: US12301625B2
     patent_date: Apr/2019
+    patent_url: "https://patents.google.com/patent/US12301625B2/"
   - patent_title: DSL for Threat-Actor Deception
     patent_id: US10958686B2
-    patent_url: "https://patents.google.com/patent/US10958686B2/"
     patent_date: Apr/2019
+    patent_url: "https://patents.google.com/patent/US10958686B2/"
+  - patent_title: Asset Remediation Trend Map Generation and Utilization for Threat Mitigation
+    patent_id: US12445466B2
+    patent_date: Apr/2019
+    patent_url: "https://patents.google.com/patent/US12445466B2/"
   - patent_title: Method and Apparatus for Intelligent Aggregation of Threat Behavior
     patent_id: US10104101B1
-    patent_url: "https://patents.google.com/patent/US10104101B1/"
     patent_date: Apr/2017
-    patent_description: An attempt towards automated selection and grouping of aggregated threat behavior indicators depicting dominant malware characteristics.
+    patent_url: "https://patents.google.com/patent/US10104101B1/"
   - patent_title: Using A Probability-based Model To Detect Random Content In Network Traffic
-    patent_id: US9680832B1
-    patent_url: "https://patents.google.com/patent/US9680832B1/"
+    patent_id: US20170346827A1
     patent_date: Dec/2014
-    patent_description: A novel idea based upon stochastic processes derived machine learning model to identify and classify random/malicious content in network traffic.
+    patent_url: "https://patents.google.com/patent/US20170346827A1/"
   - patent_title: Deobfuscating Scripted Language For Network Intrusion Detection
-    patent_id: US9419991B2
-    patent_url: "https://patents.google.com/patent/US9419991B2/"
+    patent_id: US10089464B2
     patent_date: Sep/2014
-    patent_description: An attempt towards normalizing web scripts for network security appliances to consume and operate upon.
+    patent_url: "https://patents.google.com/patent/US10089464B2/"
 
 talks:
   - name: svachal + machinescli
@@ -257,9 +251,9 @@ portfoliogs:
   faicontext: graduation-cap
   url: "https://scholar.google.com/citations?hl=en&user=fukhpJ0AAAAJ"
   metrics:
-    - "Citations: 98"
-    - "h-index: 4"
-    - "i10-index: 3"
+    - "Citations: 154"
+    - "h-index: 7"
+    - "i10-index: 4"
 
 portfoliogh:
   name: GitHub
@@ -269,10 +263,10 @@ portfoliogh:
     - "Rank: S (top 25%)"
     - "Commits: 16.4k"
     #- "Contributions: 11"
-    - "Followers: 142"
+    - "Followers: 179"
     - "Pull Requests: 16"
     #- "Repositories: 24"
-    - "Stars: 338"
+    - "Stars: 395"
     - "Languages: python/c/assembly/shell/tex"
 
 portfolioso:
@@ -280,8 +274,8 @@ portfolioso:
   faicontext: stack-overflow
   url: "https://stackoverflow.com/users/1079836/7h3ram"
   metrics:
-    - "Reputation: 1895"
-    - "Impact: ~606k people reached"
+    - "Reputation: 1915"
+    - "Impact: ~634k people reached"
     - "Badges: gold:2/silver:16/bronze:18"
 
 media:

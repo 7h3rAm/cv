@@ -32,6 +32,10 @@ $if(lang)$
   \setmainlanguage{$lang$}
 $endif$
 
+% HEADINGS (load before libertine to avoid warnings)
+%--------------------------------
+\usepackage{sectsty}
+
 % TYPOGRAPHY
 %--------------------------------
 \usepackage{enumitem}
@@ -42,11 +46,6 @@ $endif$
 \usepackage[none]{hyphenat}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
-
-% HEADINGS
-%--------------------------------
-\usepackage{sectsty}
-\usepackage[normalem]{ulem}
 \sectionfont{\rmfamily\mdseries}
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize\textbf}
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
