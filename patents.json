@@ -1,0 +1,1485 @@
+[
+  {
+    "patent_id": "10089464",
+    "patent_title": "De-obfuscating scripted language for network intrusion detection using a regular expression signature",
+    "patent_type": "utility",
+    "patent_date": "2018-10-02",
+    "patent_year": 2018,
+    "patent_abstract": "A device receives data, identifies a context associated with the data, and identifies a script, within the data, associated with the context. The device parses the script to identify tokens, forms nodes based on the tokens, and assembles a syntax tree using the nodes. The device renames one or more identifiers associated with the nodes and generates a normalized text, associated with the script, based on the syntax tree after renaming the one or more identifiers. The device determines whether the normalized text matches a regular expression signature and processes the data based on determining whether the normalized text matches the regular expression signature. The device processes the data by a first process when the normalized text matches the regular expression signature or by a second process, different from the first process, when the normalized text does not match the regular expression signature.",
+    "patent_cpc_current_group_average_patent_processing_days": 998,
+    "withdrawn": false,
+    "patent_detail_desc_length": 40887,
+    "patent_earliest_application_date": "2016-08-15",
+    "patent_num_foreign_documents_cited": 0,
+    "patent_num_times_cited_by_us_patents": 0,
+    "patent_num_total_documents_cited": 12,
+    "patent_num_us_applications_cited": 8,
+    "patent_num_us_patents_cited": 4,
+    "patent_processing_days": 778,
+    "patent_term_extension": null,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/6605e063-c0c7-4a43-8478-7a231fbea22a/",
+        "assignee_id": "6605e063-c0c7-4a43-8478-7a231fbea22a",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Juniper Networks, Inc.",
+        "assignee_location_id": "c59ba8f0-16c7-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Sunnyvale",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:563/",
+        "cpc_group_id": "G06F21/563"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F8:427/",
+        "cpc_group_id": "G06F8/427"
+      },
+      {
+        "cpc_sequence": 2,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:562/",
+        "cpc_group_id": "G06F21/562"
+      },
+      {
+        "cpc_sequence": 3,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:564/",
+        "cpc_group_id": "G06F21/564"
+      },
+      {
+        "cpc_sequence": 4,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:566/",
+        "cpc_group_id": "G06F21/566"
+      },
+      {
+        "cpc_sequence": 5,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F40:211/",
+        "cpc_group_id": "G06F40/211"
+      },
+      {
+        "cpc_sequence": 6,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:0245/",
+        "cpc_group_id": "H04L63/0245"
+      },
+      {
+        "cpc_sequence": 7,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1416/",
+        "cpc_group_id": "H04L63/1416"
+      },
+      {
+        "cpc_sequence": 8,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1425/",
+        "cpc_group_id": "H04L63/1425"
+      },
+      {
+        "cpc_sequence": 9,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F9:45529/",
+        "cpc_group_id": "G06F9/45529"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "19d5331e-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Amroli",
+        "inventor_state": null,
+        "inventor_country": "IN",
+        "inventor_sequence": 0
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/4/",
+        "wipo_field_id": "4",
+        "wipo_sequence": 1
+      },
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/6/",
+        "wipo_field_id": "6",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": []
+  },
+  {
+    "patent_id": "10104101",
+    "patent_title": "Method and apparatus for intelligent aggregation of threat behavior for the detection of malware",
+    "patent_type": "utility",
+    "patent_date": "2018-10-16",
+    "patent_year": 2018,
+    "patent_abstract": "Embodiments disclosed herein are directed to intelligent malware detection. A scanner server is used to scan an endpoint device for malware. Various attributes and behaviors of the endpoint device are identified in retrieved scan data. Identified attributes and behaviors are then evaluated according to a malware detection framework, which is used to determine whether (as well as to what extent) the identified attributes and behaviors are indicative of malware. In this manner, potential security risks associated with the malware may be identified. The framework is constructed through a machine learning process that aggregates attributes and behaviors common amongst members of malware families. Advantageously, the framework enables the scanner server to detect unknown variants of known malware families.",
+    "patent_cpc_current_group_average_patent_processing_days": 949,
+    "withdrawn": false,
+    "patent_detail_desc_length": 78288,
+    "patent_earliest_application_date": "2017-04-28",
+    "patent_num_foreign_documents_cited": 0,
+    "patent_num_times_cited_by_us_patents": 28,
+    "patent_num_total_documents_cited": 13,
+    "patent_num_us_applications_cited": 8,
+    "patent_num_us_patents_cited": 5,
+    "patent_processing_days": 536,
+    "patent_term_extension": null,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B1",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1416/",
+        "cpc_group_id": "H04L63/1416"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:53/",
+        "cpc_group_id": "G06F21/53"
+      },
+      {
+        "cpc_sequence": 2,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:552/",
+        "cpc_group_id": "G06F21/552"
+      },
+      {
+        "cpc_sequence": 3,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:56/",
+        "cpc_group_id": "G06F21/56"
+      },
+      {
+        "cpc_sequence": 4,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:145/",
+        "cpc_group_id": "H04L63/145"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ab_ln:limaye-1/",
+        "inventor_id": "fl:ab_ln:limaye-1",
+        "inventor_name_first": "Abhijit",
+        "inventor_name_last": "Limaye",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "119ae6d0-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Pune",
+        "inventor_state": null,
+        "inventor_country": "IN",
+        "inventor_sequence": 2
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:su_ln:thakar-1/",
+        "inventor_id": "fl:su_ln:thakar-1",
+        "inventor_name_first": "Sumedh",
+        "inventor_name_last": "Thakar",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "13f05eea-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "San Jose",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/4/",
+        "wipo_field_id": "4",
+        "wipo_sequence": 1
+      },
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/6/",
+        "wipo_field_id": "6",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": [
+      {
+        "patent_id": "10560472",
+        "patent": "https://search.patentsview.org/api/v1/patent/10560472/",
+        "citation_sequence": 43,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by examiner",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "10855700",
+        "patent": "https://search.patentsview.org/api/v1/patent/10855700/",
+        "citation_sequence": 340,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by examiner",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "11240014",
+        "patent": "https://search.patentsview.org/api/v1/patent/11240014/",
+        "citation_sequence": 31,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11322050",
+        "patent": "https://search.patentsview.org/api/v1/patent/11322050/",
+        "citation_sequence": 31,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by examiner",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "11343270",
+        "patent": "https://search.patentsview.org/api/v1/patent/11343270/",
+        "citation_sequence": 31,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11449799",
+        "patent": "https://search.patentsview.org/api/v1/patent/11449799/",
+        "citation_sequence": 32,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11451561",
+        "patent": "https://search.patentsview.org/api/v1/patent/11451561/",
+        "citation_sequence": 4,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by examiner",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "11477016",
+        "patent": "https://search.patentsview.org/api/v1/patent/11477016/",
+        "citation_sequence": 34,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11533175",
+        "patent": "https://search.patentsview.org/api/v1/patent/11533175/",
+        "citation_sequence": 32,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11626983",
+        "patent": "https://search.patentsview.org/api/v1/patent/11626983/",
+        "citation_sequence": 32,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11693961",
+        "patent": "https://search.patentsview.org/api/v1/patent/11693961/",
+        "citation_sequence": 3,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by examiner",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "11727310",
+        "patent": "https://search.patentsview.org/api/v1/patent/11727310/",
+        "citation_sequence": 34,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11727829",
+        "patent": "https://search.patentsview.org/api/v1/patent/11727829/",
+        "citation_sequence": 32,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by examiner",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "11736280",
+        "patent": "https://search.patentsview.org/api/v1/patent/11736280/",
+        "citation_sequence": 20,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by examiner",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "11736281",
+        "patent": "https://search.patentsview.org/api/v1/patent/11736281/",
+        "citation_sequence": 32,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11750378",
+        "patent": "https://search.patentsview.org/api/v1/patent/11750378/",
+        "citation_sequence": 34,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11763154",
+        "patent": "https://search.patentsview.org/api/v1/patent/11763154/",
+        "citation_sequence": 13,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11838410",
+        "patent": "https://search.patentsview.org/api/v1/patent/11838410/",
+        "citation_sequence": 32,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11902431",
+        "patent": "https://search.patentsview.org/api/v1/patent/11902431/",
+        "citation_sequence": 36,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "11956252",
+        "patent": "https://search.patentsview.org/api/v1/patent/11956252/",
+        "citation_sequence": 2,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "12056237",
+        "patent": "https://search.patentsview.org/api/v1/patent/12056237/",
+        "citation_sequence": 7,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "12058147",
+        "patent": "https://search.patentsview.org/api/v1/patent/12058147/",
+        "citation_sequence": 7,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "12073300",
+        "patent": "https://search.patentsview.org/api/v1/patent/12073300/",
+        "citation_sequence": 34,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "12074967",
+        "patent": "https://search.patentsview.org/api/v1/patent/12074967/",
+        "citation_sequence": 34,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "12200116",
+        "patent": "https://search.patentsview.org/api/v1/patent/12200116/",
+        "citation_sequence": 34,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "12219058",
+        "patent": "https://search.patentsview.org/api/v1/patent/12219058/",
+        "citation_sequence": 34,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      },
+      {
+        "patent_id": "12277223",
+        "patent": "https://search.patentsview.org/api/v1/patent/12277223/",
+        "citation_sequence": 6,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar"
+      },
+      {
+        "patent_id": "12381896",
+        "patent": "https://search.patentsview.org/api/v1/patent/12381896/",
+        "citation_sequence": 2,
+        "citation_patent_id": "10104101",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10104101/",
+        "citation_wipo_kind": "B1",
+        "citation_category": "cited by applicant",
+        "citation_date": "2018-10-16",
+        "citation_name": "Thakar et al."
+      }
+    ]
+  },
+  {
+    "patent_id": "10958686",
+    "patent_title": "Domain specific language for threat-actor deception",
+    "patent_type": "utility",
+    "patent_date": "2021-03-23",
+    "patent_year": 2021,
+    "patent_abstract": "The present disclosure describes enticing a threat-actor to execute an attack execution operation. According to one aspect of the subject matter described in this disclosure, a method for generating a domain-specific language (DSL) file is disclosed. The method may comprise determining, a framework based on an attack repository, determining a first primitive based on the framework, and determining a second primitive based on the framework. In one implementation, the first primitive and the second primitive are fundamental structures or constructs within a DSL. The method further comprises combining the first primitive and the second primitive into a DSL file. In one implementation, the DSL file is executed to create a computing environment that entices a first attacker to execute an attack execution operation within a given domain.",
+    "patent_cpc_current_group_average_patent_processing_days": 893,
+    "withdrawn": false,
+    "patent_detail_desc_length": 78828,
+    "patent_earliest_application_date": "2019-04-15",
+    "patent_num_foreign_documents_cited": 0,
+    "patent_num_times_cited_by_us_patents": 3,
+    "patent_num_total_documents_cited": 1,
+    "patent_num_us_applications_cited": 1,
+    "patent_num_us_patents_cited": 0,
+    "patent_processing_days": 708,
+    "patent_term_extension": 19,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1491/",
+        "cpc_group_id": "H04L63/1491"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:14/",
+        "cpc_group_id": "H04L63/14"
+      },
+      {
+        "cpc_sequence": 2,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1416/",
+        "cpc_group_id": "H04L63/1416"
+      },
+      {
+        "cpc_sequence": 3,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1425/",
+        "cpc_group_id": "H04L63/1425"
+      },
+      {
+        "cpc_sequence": 4,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1433/",
+        "cpc_group_id": "H04L63/1433"
+      },
+      {
+        "cpc_sequence": 5,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1441/",
+        "cpc_group_id": "H04L63/1441"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ma_ln:dani-1/",
+        "inventor_id": "fl:ma_ln:dani-1",
+        "inventor_name_first": "Mayuresh Vishwas",
+        "inventor_name_last": "Dani",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "c402c9a6-16c7-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Fremont",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/4/",
+        "wipo_field_id": "4",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": [
+      {
+        "patent_id": "11874933",
+        "patent": "https://search.patentsview.org/api/v1/patent/11874933/",
+        "citation_sequence": 6,
+        "citation_patent_id": "10958686",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10958686/",
+        "citation_wipo_kind": "B2",
+        "citation_category": "cited by applicant",
+        "citation_date": "2021-03-23",
+        "citation_name": "Dani et al."
+      },
+      {
+        "patent_id": "12034743",
+        "patent": "https://search.patentsview.org/api/v1/patent/12034743/",
+        "citation_sequence": 0,
+        "citation_patent_id": "10958686",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10958686/",
+        "citation_wipo_kind": "B2",
+        "citation_category": "cited by applicant",
+        "citation_date": "2021-03-23",
+        "citation_name": "Dani et al."
+      },
+      {
+        "patent_id": "12417292",
+        "patent": "https://search.patentsview.org/api/v1/patent/12417292/",
+        "citation_sequence": 6,
+        "citation_patent_id": "10958686",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/10958686/",
+        "citation_wipo_kind": "B2",
+        "citation_category": "cited by applicant",
+        "citation_date": "2021-03-23",
+        "citation_name": "Dani et al."
+      }
+    ]
+  },
+  {
+    "patent_id": "11334666",
+    "patent_title": "Attack kill chain generation and utilization for threat analysis",
+    "patent_type": "utility",
+    "patent_date": "2022-05-17",
+    "patent_year": 2022,
+    "patent_abstract": "The present disclosure relates to methods, systems, and computer program products for generating an attack kill chain for threat analysis. The method comprises receiving a first security event captured by a first security operation associated with a computing device, and receiving a second security event captured by a second security operation associated with the computing device. The first security event and the second security event are associated with an attack campaign. The method further comprises mapping the first security event to first security data in an attack repository, and mapping the second security event to second security data in the attack repository. The method also comprises determining based on the mapping, one or more attack execution operations for executing the attack campaign associated with the first security event and the second security event. Additionally, the method sequences the one or more attack execution operations to form an attack kill chain.",
+    "patent_cpc_current_group_average_patent_processing_days": 878,
+    "withdrawn": false,
+    "patent_detail_desc_length": 76667,
+    "patent_earliest_application_date": "2019-04-15",
+    "patent_num_foreign_documents_cited": 1,
+    "patent_num_times_cited_by_us_patents": 2,
+    "patent_num_total_documents_cited": 17,
+    "patent_num_us_applications_cited": 15,
+    "patent_num_us_patents_cited": 1,
+    "patent_processing_days": 1128,
+    "patent_term_extension": null,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:554/",
+        "cpc_group_id": "G06F21/554"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F2221:034/",
+        "cpc_group_id": "G06F2221/034"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ma_ln:dani-1/",
+        "inventor_id": "fl:ma_ln:dani-1",
+        "inventor_name_first": "Mayuresh Vishwas",
+        "inventor_name_last": "Dani",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "c402c9a6-16c7-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Fremont",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/6/",
+        "wipo_field_id": "6",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": [
+      {
+        "patent_id": "11874933",
+        "patent": "https://search.patentsview.org/api/v1/patent/11874933/",
+        "citation_sequence": 9,
+        "citation_patent_id": "11334666",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/11334666/",
+        "citation_wipo_kind": "B2",
+        "citation_category": "cited by applicant",
+        "citation_date": "2022-05-17",
+        "citation_name": "Tyagi et al."
+      },
+      {
+        "patent_id": "12417292",
+        "patent": "https://search.patentsview.org/api/v1/patent/12417292/",
+        "citation_sequence": 9,
+        "citation_patent_id": "11334666",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/11334666/",
+        "citation_wipo_kind": "B2",
+        "citation_category": "cited by applicant",
+        "citation_date": "2022-05-17",
+        "citation_name": "Tyagi et al."
+      }
+    ]
+  },
+  {
+    "patent_id": "11805147",
+    "patent_title": "Domain-specific language simulant for simulating a threat-actor and adversarial tactics, techniques, and procedures",
+    "patent_type": "utility",
+    "patent_date": "2023-10-31",
+    "patent_year": 2023,
+    "patent_abstract": "The present describes simulating a threat-actor executing an attack execution operation. According to one aspect of the subject matter described in this disclosure, a method for generating a domain-specific language (DSL) simulant is disclosed. The method may comprise determining, a framework based on an attack repository, determining a first primitive based on the framework, and determining a second primitive based on the framework. In one implementation, the first primitive and the second primitive are fundamental structures or constructs within a DSL. The method further comprises combining the first primitive and the second primitive into a DSL simulant. In one implementation, the DSL simulant is executed to simulate a threat-actor executing an attack execution operation.",
+    "patent_cpc_current_group_average_patent_processing_days": 847,
+    "withdrawn": false,
+    "patent_detail_desc_length": 78723,
+    "patent_earliest_application_date": "2021-03-29",
+    "patent_num_foreign_documents_cited": 0,
+    "patent_num_times_cited_by_us_patents": 0,
+    "patent_num_total_documents_cited": 4,
+    "patent_num_us_applications_cited": 4,
+    "patent_num_us_patents_cited": 0,
+    "patent_processing_days": 946,
+    "patent_term_extension": 23,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1433/",
+        "cpc_group_id": "H04L63/1433"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:14/",
+        "cpc_group_id": "H04L63/14"
+      },
+      {
+        "cpc_sequence": 2,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1416/",
+        "cpc_group_id": "H04L63/1416"
+      },
+      {
+        "cpc_sequence": 3,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1425/",
+        "cpc_group_id": "H04L63/1425"
+      },
+      {
+        "cpc_sequence": 4,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1441/",
+        "cpc_group_id": "H04L63/1441"
+      },
+      {
+        "cpc_sequence": 5,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1491/",
+        "cpc_group_id": "H04L63/1491"
+      },
+      {
+        "cpc_sequence": 6,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04W/",
+        "cpc_subclass_id": "H04W",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04W12:122/",
+        "cpc_group_id": "H04W12/122"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ma_ln:dani-1/",
+        "inventor_id": "fl:ma_ln:dani-1",
+        "inventor_name_first": "Mayuresh Vishwas",
+        "inventor_name_last": "Dani",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "6482ff1a-49af-11ed-9879-1234bde3cd05",
+        "inventor_city": "Fremont",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/4/",
+        "wipo_field_id": "4",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": []
+  },
+  {
+    "patent_id": "11968225",
+    "patent_title": "Attack path and graph creation based on user and system profiling",
+    "patent_type": "utility",
+    "patent_date": "2024-04-23",
+    "patent_year": 2024,
+    "patent_abstract": "Methods and systems for generating an attack path based on user and system risk profiles are presented. The method comprises determining user information associated with a computing device; determining system exploitability information of the computing device; determining system criticality information of the computing device; determining a risk profile for the computing device based on the user information, the system exploitability information, and the system criticality information; and generating an attack path based on the risk profile. The attack path indicates a route through which an attacker accesses the computing device. The system exploitability information indicates one or more of: the vulnerability associated with the computing device, an exposure window associated with the computing device, and a protection window associated with the computing device. The system criticality information indicates one or more: assets associated with the computing device and services associated with the computing device.",
+    "patent_cpc_current_group_average_patent_processing_days": 718,
+    "withdrawn": false,
+    "patent_detail_desc_length": 68898,
+    "patent_earliest_application_date": "2022-06-13",
+    "patent_num_foreign_documents_cited": 10,
+    "patent_num_times_cited_by_us_patents": 1,
+    "patent_num_total_documents_cited": 27,
+    "patent_num_us_applications_cited": 15,
+    "patent_num_us_patents_cited": 2,
+    "patent_processing_days": 680,
+    "patent_term_extension": null,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1433/",
+        "cpc_group_id": "H04L63/1433"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ma_ln:dani-1/",
+        "inventor_id": "fl:ma_ln:dani-1",
+        "inventor_name_first": "Mayuresh Vishwas",
+        "inventor_name_last": "Dani",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "6482ff1a-49af-11ed-9879-1234bde3cd05",
+        "inventor_city": "Fremont",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ri_ln:bhide-1/",
+        "inventor_id": "fl:ri_ln:bhide-1",
+        "inventor_name_first": "Rishikesh Jayaram",
+        "inventor_name_last": "Bhide",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "119ae6d0-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Pune",
+        "inventor_state": null,
+        "inventor_country": "IN",
+        "inventor_sequence": 2
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/4/",
+        "wipo_field_id": "4",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": [
+      {
+        "patent_id": "12413615",
+        "patent": "https://search.patentsview.org/api/v1/patent/12413615/",
+        "citation_sequence": 6,
+        "citation_patent_id": "11968225",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/11968225/",
+        "citation_wipo_kind": "B2",
+        "citation_category": "cited by examiner",
+        "citation_date": "2024-04-23",
+        "citation_name": "Dani"
+      }
+    ]
+  },
+  {
+    "patent_id": "12034743",
+    "patent_title": "Quantification of adversary tactics, techniques, and procedures using threat attribute groupings and correlation",
+    "patent_type": "utility",
+    "patent_date": "2024-07-09",
+    "patent_year": 2024,
+    "patent_abstract": "The present disclosure provides a method and a system for generating a decision tree that tests security event files. The method comprises receiving attack data comprising a plurality of attack execution operations and determining threat attribute data based on the attack data. The method also comprises generating a decision tree using the threat attribute data. The decision tree includes at least one first node and a plurality of second nodes connected to the at least one first node. A first nodal data may be generated and assigned to each second node based on one or more threat attributes associated with the threat attribute data. In response to receiving a security event file, the method executes one or more security tests, using the decision tree, for the security event file.",
+    "patent_cpc_current_group_average_patent_processing_days": 847,
+    "withdrawn": false,
+    "patent_detail_desc_length": 62419,
+    "patent_earliest_application_date": "2021-11-12",
+    "patent_num_foreign_documents_cited": 0,
+    "patent_num_times_cited_by_us_patents": 1,
+    "patent_num_total_documents_cited": 19,
+    "patent_num_us_applications_cited": 16,
+    "patent_num_us_patents_cited": 3,
+    "patent_processing_days": 970,
+    "patent_term_extension": 192,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1416/",
+        "cpc_group_id": "H04L63/1416"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1425/",
+        "cpc_group_id": "H04L63/1425"
+      },
+      {
+        "cpc_sequence": 2,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1433/",
+        "cpc_group_id": "H04L63/1433"
+      },
+      {
+        "cpc_sequence": 3,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1441/",
+        "cpc_group_id": "H04L63/1441"
+      },
+      {
+        "cpc_sequence": 4,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1466/",
+        "cpc_group_id": "H04L63/1466"
+      },
+      {
+        "cpc_sequence": 5,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:20/",
+        "cpc_group_id": "H04L63/20"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ma_ln:dani-1/",
+        "inventor_id": "fl:ma_ln:dani-1",
+        "inventor_name_first": "Mayuresh Vishwas",
+        "inventor_name_last": "Dani",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "6482ff1a-49af-11ed-9879-1234bde3cd05",
+        "inventor_city": "Fremont",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/4/",
+        "wipo_field_id": "4",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": [
+      {
+        "patent_id": "12348570",
+        "patent": "https://search.patentsview.org/api/v1/patent/12348570/",
+        "citation_sequence": 2,
+        "citation_patent_id": "12034743",
+        "citation_patent": "https://search.patentsview.org/api/v1/patent/12034743/",
+        "citation_wipo_kind": "B2",
+        "citation_category": "cited by examiner",
+        "citation_date": "2024-07-09",
+        "citation_name": "Tyagi"
+      }
+    ]
+  },
+  {
+    "patent_id": "12301625",
+    "patent_title": "Domain specific language for defending against a threat-actor and adversarial tactics, techniques, and procedures",
+    "patent_type": "utility",
+    "patent_date": "2025-05-13",
+    "patent_year": 2025,
+    "patent_abstract": "The present disclosure describes defending against an attack execution operation. According to one aspect of the subject matter described in this disclosure, a method for generating a domain-specific language (DSL) file is disclosed. The method may comprise determining, a framework based on an attack repository, determining a first primitive based on the framework, and determining a second primitive based on the framework. In one implementation, the first primitive and the second primitive are fundamental structures or constructs within a DSL. The method further comprises combining the first primitive and the second primitive into a DSL file. In one implementation, the DSL file is executed to defend against a first attack execution operation executed by a threat-actor.",
+    "patent_cpc_current_group_average_patent_processing_days": 548,
+    "withdrawn": false,
+    "patent_detail_desc_length": 78725,
+    "patent_earliest_application_date": "2023-10-30",
+    "patent_num_foreign_documents_cited": 0,
+    "patent_num_times_cited_by_us_patents": 0,
+    "patent_num_total_documents_cited": 6,
+    "patent_num_us_applications_cited": 6,
+    "patent_num_us_patents_cited": 0,
+    "patent_processing_days": 561,
+    "patent_term_extension": 0,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:20/",
+        "cpc_group_id": "H04L63/20"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1416/",
+        "cpc_group_id": "H04L63/1416"
+      },
+      {
+        "cpc_sequence": 2,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1433/",
+        "cpc_group_id": "H04L63/1433"
+      },
+      {
+        "cpc_sequence": 3,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:1441/",
+        "cpc_group_id": "H04L63/1441"
+      },
+      {
+        "cpc_sequence": 4,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04L/",
+        "cpc_subclass_id": "H04L",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04L63:145/",
+        "cpc_group_id": "H04L63/145"
+      },
+      {
+        "cpc_sequence": 5,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/H04/",
+        "cpc_class_id": "H04",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/H04W/",
+        "cpc_subclass_id": "H04W",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/H04W12:128/",
+        "cpc_group_id": "H04W12/128"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ma_ln:dani-1/",
+        "inventor_id": "fl:ma_ln:dani-1",
+        "inventor_name_first": "Mayuresh Vishwas",
+        "inventor_name_last": "Dani",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "6482ff1a-49af-11ed-9879-1234bde3cd05",
+        "inventor_city": "Fremont",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/4/",
+        "wipo_field_id": "4",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": []
+  },
+  {
+    "patent_id": "12417292",
+    "patent_title": "Quantification of security events using behavioral, analytical, and threat intelligence attributes",
+    "patent_type": "utility",
+    "patent_date": "2025-09-16",
+    "patent_year": 2025,
+    "patent_abstract": "A system for testing a security object is disclosed. The system comprises processors and memory storing a plurality of security engines and instructions that, when executed by the processors, causes the system to: access a decision tree comprising a first node and a plurality of second nodes; link a first leaf node of the decision tree with a first security engine; link a second leaf node of the decision tree with a second security engine; receive a security object comprising a digital asset that is attackable using one or more attack execution operations; and test the security object using the decision tree to determine a security threat parameter for the security object. The security threat parameter may be used to prioritize one or more remediation steps for mitigating against the one or more attack execution operations associated with the digital asset.",
+    "patent_cpc_current_group_average_patent_processing_days": 402,
+    "withdrawn": false,
+    "patent_detail_desc_length": 74248,
+    "patent_earliest_application_date": "2024-01-12",
+    "patent_num_foreign_documents_cited": 1,
+    "patent_num_times_cited_by_us_patents": 0,
+    "patent_num_total_documents_cited": 80,
+    "patent_num_us_applications_cited": 67,
+    "patent_num_us_patents_cited": 12,
+    "patent_processing_days": 613,
+    "patent_term_extension": 48,
+    "gov_interest_statement": null,
+    "patent_uspc_current_mainclass_average_patent_processing_days": null,
+    "wipo_kind": "B2",
+    "assignees": [
+      {
+        "assignee": "https://search.patentsview.org/api/v1/assignee/7c974d61-f6bf-48fe-b0d4-ce272d1e252b/",
+        "assignee_id": "7c974d61-f6bf-48fe-b0d4-ce272d1e252b",
+        "assignee_type": "2",
+        "assignee_individual_name_first": null,
+        "assignee_individual_name_last": null,
+        "assignee_organization": "Qualys, Inc.",
+        "assignee_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "assignee_city": "Foster City",
+        "assignee_state": "CA",
+        "assignee_country": "US",
+        "assignee_sequence": 0
+      }
+    ],
+    "cpc_current": [
+      {
+        "cpc_sequence": 0,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:577/",
+        "cpc_group_id": "G06F21/577"
+      },
+      {
+        "cpc_sequence": 1,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F21:566/",
+        "cpc_group_id": "G06F21/566"
+      },
+      {
+        "cpc_sequence": 2,
+        "cpc_class": "https://search.patentsview.org/api/v1/cpc_class/G06/",
+        "cpc_class_id": "G06",
+        "cpc_subclass": "https://search.patentsview.org/api/v1/cpc_subclass/G06F/",
+        "cpc_subclass_id": "G06F",
+        "cpc_group": "https://search.patentsview.org/api/v1/cpc_group/G06F2221:034/",
+        "cpc_group_id": "G06F2221/034"
+      }
+    ],
+    "inventors": [
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:ma_ln:dani-1/",
+        "inventor_id": "fl:ma_ln:dani-1",
+        "inventor_name_first": "Mayuresh Vishwas",
+        "inventor_name_last": "Dani",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "6482ff1a-49af-11ed-9879-1234bde3cd05",
+        "inventor_city": "Fremont",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 1
+      },
+      {
+        "inventor": "https://search.patentsview.org/api/v1/inventor/fl:an_ln:tyagi-7/",
+        "inventor_id": "fl:an_ln:tyagi-7",
+        "inventor_name_first": "Ankur S.",
+        "inventor_name_last": "Tyagi",
+        "inventor_gender_code": "M",
+        "inventor_location_id": "1416e13d-16c8-11ed-9b5f-1234bde3cd05",
+        "inventor_city": "Foster City",
+        "inventor_state": "CA",
+        "inventor_country": "US",
+        "inventor_sequence": 0
+      }
+    ],
+    "wipo": [
+      {
+        "wipo_field": "https://search.patentsview.org/api/v1/wipo/6/",
+        "wipo_field_id": "6",
+        "wipo_sequence": 0
+      }
+    ],
+    "us_patent_citations": []
+  }
+]
